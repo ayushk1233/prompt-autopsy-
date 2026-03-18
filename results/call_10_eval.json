@@ -17,27 +17,21 @@
   "worst_messages": [
     {
       "speaker": "agent",
-      "text": "Okay, I understand you need some time to consider the options. Would it be alright if I checked in with you in about a week? Also, just a reminder that every month the loan remains open, it adds a negative entry to your credit report.",
-      "reason": "empathy_tone: Agent continued DPD/credit damage talk without any empathy."
+      "text": "Okay, I understand you need some time to consider the options. Would it be alright if I checked in with you in about a week? Also, just a reminder that every month the loan remains open, it adds a negative entry to your credit report. The offer for penalty removal will still be open when we next speak. Please save my number and feel free to call whenever you're ready.",
+      "reason": "phase_discipline: Borrower committed to payment but agent never reached closing"
     },
     {
       "speaker": "agent",
-      "text": "Okay, I understand you need some time to consider the options. Would it be alright if I checked in with you in about a week? Also, just a reminder that every month the loan remains open, it adds a negative entry to your credit report.",
-      "reason": "phase_discipline: Borrower did not commit to payment but agent never reached closing."
-    },
-    {
-      "speaker": "agent",
-      "text": "The offer for penalty removal will still be open when we next speak. Please save my number and feel free to call whenever you're ready.",
-      "reason": "resolution_effectiveness: Call ended with borrower saying \"I'll check\" and agent accepted with no follow-up"
+      "text": "Okay, give me just a moment... Okay, Ravi Gupta, to help me understand better, could you tell me a little bit about what's making it difficult to pay the fifty-five thousand rupees for your DemoLender loan right now?",
+      "reason": "phase_discipline: TOS or POS amount disclosed before borrower identity confirmed"
     }
   ],
   "reasons": [
-    "empathy_tone: Agent continued DPD/credit damage talk without any empathy.",
-    "phase_discipline: Borrower did not commit to payment but agent never reached closing.",
-    "resolution_effectiveness: Call ended with borrower saying \"I'll check\" and agent accepted with no follow-up",
-    "negotiation_quality: Agent never quoted POS (closure amount) during negotiation."
+    "phase_discipline: TOS or POS amount disclosed before borrower identity confirmed",
+    "phase_discipline: Borrower committed to payment but agent never reached closing",
+    "resolution_effectiveness: Call ended with borrower saying \"I'll check\" and agent accepted with no follow-up"
   ],
-  "summary": "The agent started the call appropriately, but the negotiation phase was weak as the agent did not quote the POS amount. The call ended without a firm commitment from the borrower, and the agent accepted this without further probing.",
+  "summary": "The agent disclosed the TOS amount before confirming the borrower's identity. The call ended with the borrower needing time to consider options, but the agent did not schedule a specific callback.",
   "gate_enforced": false,
   "disposition": "NO_COMMITMENT",
   "phases_visited": [

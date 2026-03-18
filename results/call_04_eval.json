@@ -17,34 +17,28 @@
   "worst_messages": [
     {
       "speaker": "agent",
-      "text": "Okay. Okay. We have a few ways we can approach this. One option is to look at restructuring your loan to give you more time to pay, which could temporarily lower your monthly amount.",
-      "reason": "negotiation_quality: Agent offered loan restructuring."
+      "text": "Okay. Okay. We have a few ways we can approach this. One option is to look at restructuring your loan to give you more time to pay, which could temporarily lower your monthly amount. Another is to see if we can settle for a reduced amount by waiving some of the penalty charges. And a third option could be to explore a temporary hold on payments, though that's usually for a shorter duration. Which of these sounds most interesting to you right now?",
+      "reason": "negotiation_quality: Agent offered loan restructuring and temporary hold on payments."
     },
     {
       "speaker": "agent",
-      "text": "Another is to see if we can settle for a reduced amount by waiving some of the penalty charges. And a third option could be to explore a temporary hold on payments, though that's usually for a shorter duration.",
-      "reason": "negotiation_quality: Agent offered temporary hold on payments."
-    },
-    {
-      "speaker": "agent",
-      "text": "Which of these sounds most interesting to you right now?",
+      "text": "Okay. Okay. We have a few ways we can approach this. One option is to look at restructuring your loan to give you more time to pay, which could temporarily lower your monthly amount. Another is to see if we can settle for a reduced amount by waiving some of the penalty charges. And a third option could be to explore a temporary hold on payments, though that's usually for a shorter duration. Which of these sounds most interesting to you right now?",
       "reason": "negotiation_quality: Agent asked 'which option?' without giving concrete amounts."
     },
     {
       "speaker": "agent",
-      "text": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?",
-      "reason": "phase_discipline: Agent moved to negotiation because of audio issues, not completed discovery."
+      "text": "I understand you need some time to make the payment. Would you like me to schedule a callback for you when you might be in a better position to settle this? And if so, when would be a good time for that?",
+      "reason": "resolution_effectiveness: Borrower asked for callback, agent scheduled one."
     }
   ],
   "reasons": [
-    "phase_discipline: Agent moved to negotiation because of audio issues, not completed discovery: -3",
+    "phase_discipline: Borrower committed to payment but agent never reached closing: -3",
     "negotiation_quality: Agent offered loan restructuring: -8",
     "negotiation_quality: Agent offered temporary hold on payments: -8",
     "negotiation_quality: Agent asked 'which option?' without giving concrete amounts: -3",
-    "resolution_effectiveness: Callback scheduled without any specific date or time: -5",
-    "loop_count: Agent asked the same question multiple times: -3"
+    "resolution_effectiveness: Callback scheduled with specific date and time: no deduction"
   ],
-  "summary": "The agent offered loan restructuring and a temporary hold on payments, and asked 'which option?' without giving concrete amounts. The agent also scheduled a callback without a specific date or time. The agent also moved to negotiation because of audio issues, not completed discovery.",
+  "summary": "The agent engaged the borrower, discovered the reason for delay, and moved to negotiation. The agent offered loan restructuring and a temporary hold on payments, and asked 'which option?' without giving concrete amounts. The agent scheduled a callback for the borrower.",
   "gate_enforced": false,
   "disposition": "CALLBACK",
   "phases_visited": [

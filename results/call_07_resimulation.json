@@ -1,0 +1,82 @@
+{
+  "call_id": "call_07",
+  "disposition": "LANGUAGE_BARRIER",
+  "customer_name": "Meera Joshi",
+  "flaw_targeted": "FLAW 2 variant — Language barrier, call went nowhere (Gate C fired)",
+  "improvement_notes": [],
+  "turns_replayed": 12,
+  "comparison": [
+    {
+      "turn": 1,
+      "customer": "Hello?",
+      "original_agent": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?",
+      "new_agent": "Am I speaking with Meera Joshi?"
+    },
+    {
+      "turn": 2,
+      "customer": "Hello? Hello, sir?",
+      "original_agent": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment? Hello?",
+      "new_agent": "Meera Joshi, can you hear me?"
+    },
+    {
+      "turn": 3,
+      "customer": "Sir, can I connect to the? Anyone is available?",
+      "original_agent": "Are you there?",
+      "new_agent": "Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just zero rupees — saving you the difference."
+    },
+    {
+      "turn": 4,
+      "customer": "21?",
+      "original_agent": "Okay, give me just a moment...",
+      "new_agent": "I'm sorry, could you say that again?"
+    },
+    {
+      "turn": 5,
+      "customer": "Hello?",
+      "original_agent": "Hello? Hello, sir? Yes, I can hear you.",
+      "new_agent": "Are you still there?"
+    },
+    {
+      "turn": 6,
+      "customer": "Hello? Forget. You repeat again?",
+      "original_agent": "I am Alex from DemoCompany, and I'm calling regarding your DemoLender loan. We have fifty-five thousand three hundred and thirty-five rupees pending on the account.",
+      "new_agent": "Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just zero rupees — saving you the difference."
+    },
+    {
+      "turn": 7,
+      "customer": "Okay, sir. Sir, let's say I'm explained. Let's connect the call as well. Anyone available?",
+      "original_agent": "I'm sorry, I didn't catch that. Could you please repeat it?",
+      "new_agent": "I understand. Could you tell me a bit about your current situation? What's been making it difficult to pay back the loan?"
+    },
+    {
+      "turn": 8,
+      "customer": "I'm understanding, sir. You know something?",
+      "original_agent": "Hello?",
+      "new_agent": "I understand. I'm trying to understand your situation so I can help you find a solution."
+    },
+    {
+      "turn": 9,
+      "customer": "Okay, sir.",
+      "original_agent": "Hello? Can you hear me?",
+      "new_agent": "Could you tell me a bit about your current situation? What's been making it difficult to pay back the loan?"
+    },
+    {
+      "turn": 10,
+      "customer": "Sir, can you understand?",
+      "original_agent": "I'm calling about your DemoLender loan. There's an outstanding amount of fifty-five thousand three hundred and thirty-five rupees.",
+      "new_agent": "I understand that you're having some difficulty. Can you tell me more about what's going on?"
+    },
+    {
+      "turn": 11,
+      "customer": "Okay, sir. Then do you know Tamil? Hello?",
+      "original_agent": "I am Alex from DemoCompany, and I'm calling about your DemoLender loan. There's fifty-five thousand three hundred and thirty-five rupees pending.",
+      "new_agent": "```tool_code\n{\"name\": \"switch_language\", \"description\": \"...\", \"parameters\": {\"language\": \"ta\"}}\n```"
+    },
+    {
+      "turn": 12,
+      "customer": "Hello? உம் ஆனது கப்பல் வந்து என குவில வந்து ஒரு கொஞ்சநாள் போனது கப்பல்மே என குவிலுக்கு இது சாப்பாடு படம அடியறாங்க. ஆனால், அங்குள்ளோர் ஒங்கிலாராக கடித்திருந்தன. ஒரு டிமான்சு, புவிலென்று சாப்பாடு வாகன அல்லது கேட்பனுகிட்டிருந்தன.",
+      "original_agent": "Yes, I understand. I'm calling about your DemoLender loan, and there's a pending amount of fifty-five thousand three hundred and thirty-five rupees.",
+      "new_agent": "நான் புரிந்து கொண்டேன். நீங்கள் என்ன சொல்கிறீர்கள் என்று எனக்குப் புரியவில்லை. நீங்கள் என்ன சொல்கிறீர்கள் என்று மீண்டும் சொல்ல முடியுமா?"
+    }
+  ]
+}

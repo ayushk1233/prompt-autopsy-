@@ -22,18 +22,18 @@
     },
     {
       "speaker": "agent",
-      "text": "Okay, I understand. It seems I have reached the wrong person. I will go ahead and end this call.",
-      "reason": "policy_compliance: Agent disclosed amount to wrong person"
+      "text": "Suresh Rao, I'm calling about your DemoLender education loan. We're showing a pending amount of fifty thousand rupees. Can you tell me a little about why you haven't been able to make the payments?",
+      "reason": "policy_compliance: TOS amount disclosed before borrower identity confirmed"
     }
   ],
   "reasons": [
-    "empathy_tone: Agent did not handle wrong number with empathy.",
+    "empathy_tone: Agent did not handle the wrong number situation with empathy.",
     "phase_discipline: TOS amount disclosed before borrower identity confirmed.",
-    "negotiation_quality: No negotiation possible due to wrong number.",
-    "policy_compliance: Agent disclosed amount to wrong person.",
+    "negotiation_quality: No negotiation occurred due to wrong number.",
+    "policy_compliance: TOS amount disclosed before borrower identity confirmed.",
     "resolution_effectiveness: Call ended abruptly after wrong number was identified."
   ],
-  "summary": "The agent called the wrong number and disclosed the loan amount before verifying the borrower's identity. This resulted in a policy violation and a failure to handle the situation effectively.",
+  "summary": "The agent called the wrong number and disclosed the loan amount before confirming the borrower's identity, violating policy. The call ended after the agent realized the mistake.",
   "gate_enforced": true,
   "disposition": "WRONG_NUMBER",
   "phases_visited": [

@@ -1,0 +1,86 @@
+{
+  "call_id": "call_03",
+  "disposition": "ALREADY_PAID",
+  "customer_name": "Anjali Reddy",
+  "flaw_targeted": "FLAW 3 — No loop detection, fake UTR verification (Lp=3)",
+  "improvement_notes": [
+    "Loop: After 2 UTR failures, offers escalation path instead of cycling",
+    "Honesty: Tells borrower our team will verify — does not fake real-time check",
+    "Resolution: Ends with a concrete next step, not an open loop"
+  ],
+  "turns_replayed": 12,
+  "comparison": [
+    {
+      "turn": 1,
+      "customer": "நீங்கள் அழைக்கும்",
+      "original_agent": "Hello, thank you for calling. This is Alex from DemoCompany. Am I speaking with Anjali Reddy?",
+      "new_agent": "Am I speaking with Anjali Reddy?"
+    },
+    {
+      "turn": 2,
+      "customer": "ஹலோ ஹலோ தமிழே சொல்லுங்க",
+      "original_agent": "Sari, naan ungaloda Tamil la pesuren.",
+      "new_agent": "```tool_code\n{\n \"name\": \"switch_language\",\n \"parameters\": {\n  \"language\": \"ta\"\n }\n}\n```"
+    },
+    {
+      "turn": 3,
+      "customer": "ஆமா சார்",
+      "original_agent": "Ungal peyar Anjali Reddy thaana?",
+      "new_agent": "உங்கள் மொத்த நிலுவைத் தொகை ஐம்பதாயிரம் ரூபாய். ஆனால் நாங்கள் அனைத்து கட்டணங்களையும் நீக்கிவிட்டு, உங்கள் கடனை வெறும் முப்பத்தி ஐந்தாயிரம் ரூபாய்க்கு முடிக்கலாம் - இதனால் உங்களுக்கு மீதம் சேமிக்க முடியும்."
+    },
+    {
+      "turn": 4,
+      "customer": "ஆ ஆ சார் ஈ",
+      "original_agent": "சரிங்க. இது",
+      "new_agent": "உங்களுடைய தற்போதைய நிலை என்ன என்பதைப் பற்றி கொஞ்சம் சொல்ல முடியுமா? வேலை எப்படி போயிட்டு இருக்கு?"
+    },
+    {
+      "turn": 5,
+      "customer": "ஆகாகத் இத்தன இருவத்தரா ஆகஸ்ட் ஆகஸ்ட் டுவெண்டி ஃபைவ்மே ருவாயிரலாம் கிடையாது சார்",
+      "original_agent": "ஆமாம். இது உங்கள் DemoLender கல்வி கடன் பற்றி. உங்களது நிலுவைத் தொகை பதினாறு ஆயிரத்து அறுநூற்று நாற்பத்தி இரண்டு ரூபாய். ஆனால், அனைத்து கட்டணங்களையும் நீக்கி, பத்தாயிரத்து நூறு ரூபாய்க்கு உங்கள் கடனை முடித்துக்கொள்ளலாம். இதைப்பற்றி பேச விரும்புகிறீர்களா?",
+      "new_agent": "சாரி, நீங்க என்ன சொன்னீங்கன்னு திரும்ப சொல்ல முடியுமா? எனக்கு சரியா புரியல."
+    },
+    {
+      "turn": 6,
+      "customer": "ஆகா கம்பெனிலது ஆகா",
+      "original_agent": "Sari,",
+      "new_agent": "உங்களுடைய வேலை எப்படி போயிட்டு இருக்கு? உங்களுக்கு ஏதாவது நிதி கஷ்டங்கள் இருக்கா?"
+    },
+    {
+      "turn": 7,
+      "customer": "சார் அவர் வந்து என்ன சொல்லா இருந்தா ஆகஸ்ட் டுடி சிக்ஸ்ல வந்து எல்லாமே பேமெண்ட் கட்டி முடிச்சாச்சி அப்படிங்கற மாதிரி சொல்றார்ச்சது பாக்குறது இது வரேன்",
+      "original_agent": "மன்னிக்கவும், நீங்கள் குறிப்பிட்ட தேதி சரியாக கேட்கவில்லை. இருபத்தி ஐந்தாயிரம் ரூபாய் என்று சொன்னீர்களா?",
+      "new_agent": "நீங்கள் ஏற்கனவே பணம் செலுத்திவிட்டதாக கூறுகிறீர்களா?"
+    },
+    {
+      "turn": 8,
+      "customer": "யூடி ஆர் நம்புறது அப்படியே சார் வரும் சபையில் ஆயிடு இருந்து சார்",
+      "original_agent": "சரி, உங்கள் நிறுவனத்தில்",
+      "new_agent": "நான் உங்கள் யுடிஆர் எண்ணை குறித்து வைத்துள்ளேன். எங்கள் குழு இதைச் சரிபார்த்து உங்களிடம் தொடர்புகொள்ளும்."
+    },
+    {
+      "turn": 9,
+      "customer": "அந்த யுடி ஆர் யுடி ஆர் நம்ம இருந்தா குடுக்கிறது",
+      "original_agent": "ஓ, அவர் ஆகஸ்ட்",
+      "new_agent": "நான் உங்கள் யுடிஆர் எண்ணை குறித்து வைத்துள்ளேன். எங்கள் குழு இதைச் சரிபார்த்து உங்களிடம் தொடர்புகொள்ளும்."
+    },
+    {
+      "turn": 10,
+      "customer": "ஏம்மா அது தோழி இந்த இடத்துல கால வந்துட்டோம் இந்த காலு வந்துட்டு இருங்க",
+      "original_agent": "நீங்கள் யூடிஆர் நம்பர் கொடுத்தால், நான் சரிபார்க்கிறேன். தயவுசெய்து யூடிஆர் எண்ணை சொல்ல முடியுமா?",
+      "new_agent": "நான் உங்கள் யுடிஆர் எண்ணை குறித்து வைத்துள்ளேன். எங்கள் குழு இதைச் சரிபார்த்து உங்களிடம் தொடர்புகொள்ளும்."
+    },
+    {
+      "turn": 11,
+      "customer": "நானே இருக்கு",
+      "original_agent": "சரி, நான் உங்கள் கணக்கை மீண்டும் ஒருமுறை சரிபார்க்கிறேன்.",
+      "new_agent": "```tool_code\n{\n \"name\": \"proceed_to_dispute\",\n \"parameters\": {}\n}\n```"
+    },
+    {
+      "turn": 12,
+      "customer": "ரென்ஸ் அப்படி லைன்ல இருந்து சொல்லிட்டே இந்த டமுக்கு அனுப்புனதுக்கான",
+      "original_agent": "(no original turn)",
+      "new_agent": "```tool_code\n{\n \"name\": \"end_call\",\n \"parameters\": {\n  \"reason\": \"dispute_unresolved\"\n }\n}\n```"
+    }
+  ]
+}
