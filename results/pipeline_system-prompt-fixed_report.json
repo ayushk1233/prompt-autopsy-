@@ -5,16 +5,16 @@
   "model": "gemini-2.0-flash",
   "simulated": true,
   "total_calls": 5,
-  "average_score": 64.4,
-  "good_calls": 2,
-  "bad_calls": 3,
-  "good_rate": 40.0,
+  "average_score": 69.6,
+  "good_calls": 3,
+  "bad_calls": 2,
+  "good_rate": 60.0,
   "dimension_averages": {
-    "empathy_tone": 14.6,
-    "phase_discipline": 13.8,
-    "negotiation_quality": 12.0,
-    "policy_compliance": 14.2,
-    "resolution_effectiveness": 9.8
+    "empathy_tone": 14.0,
+    "phase_discipline": 13.6,
+    "negotiation_quality": 16.4,
+    "policy_compliance": 13.6,
+    "resolution_effectiveness": 12.0
   },
   "failed_calls": [],
   "detailed_results": [
@@ -30,40 +30,46 @@
         "phase_discipline": 14,
         "negotiation_quality": 20,
         "policy_compliance": 5,
-        "resolution_effectiveness": 5
+        "resolution_effectiveness": 10
       },
-      "total_score": 51,
+      "total_score": 56,
       "verdict": "bad",
       "worst_messages": [
         {
           "speaker": "agent",
-          "text": "राहुल जी, क्या आप मुझे बता सकते हैं कि आप अभी तक भुगतान क्यों नहीं कर पाए हैं? क्या कोई वित्तीय समस्या है या कोई और कारण है?",
-          "reason": "phase_discipline: Borrower explicitly said loan is not theirs or already paid, agent did NOT call proceed_to_dispute"
+          "text": "आप support@demolender.com पर दस्तावेज़ भेज सकती हैं।",
+          "reason": "phase_discipline: agent is looping instead of progressing"
         },
         {
           "speaker": "agent",
-          "text": "मुझे समझने में मुश्किल हो रही है। क्या आप कृपया दोहरा सकते हैं?",
-          "reason": "phase_discipline: loop_count is 3 or more"
+          "text": "मुझे समझ में आ रहा है। कृपया मुझे दस्तावेज़ support@demolender.com पर भेजें। हमारी टीम आपसे संपर्क करेगी।",
+          "reason": "phase_discipline: agent is looping instead of progressing"
         },
         {
           "speaker": "agent",
-          "text": "मुझे माफ़ कीजिए। मैं आपकी बात समझ गया हूँ। आप दस्तावेज़ support@demolender.com पर भेज सकती हैं या किसी से उन्हें भेजने में मदद करने के लिए कह सकती हैं।",
-          "reason": "empathy_tone: Agent continued DPD/credit damage talk within 3 turns of borrower disclosing death of family member or serious illness"
+          "text": "मुझे समझ में आ रहा है। कृपया मुझे दस्तावेज़ support@demolender.com पर भेजें। हमारी टीम आपसे संपर्क करेगी।",
+          "reason": "phase_discipline: agent is looping instead of progressing"
         },
         {
           "speaker": "agent",
-          "text": "कनेक्शन की समस्या है - मैं बाद में फिर से कोशिश करूँगा।",
-          "reason": "resolution_effectiveness: Call ended with borrower saying \"I'll check\" and agent accepted with no follow-up"
+          "text": "आप support@demolender.com पर दस्तावेज़ भेज सकती हैं या किसी से उन्हें भेजने में मदद करने के लिए कह सकती हैं।",
+          "reason": "phase_discipline: agent is looping instead of progressing"
+        },
+        {
+          "speaker": "agent",
+          "text": "मैं समझती हूँ। मैं आपको कल वापस कॉल करूँगी। हमारी टीम आपसे संपर्क करेगी।",
+          "reason": "resolution_effectiveness: Callback scheduled without any specific date or time"
         }
       ],
       "reasons": [
-        "empathy_tone: Agent continued DPD/credit damage talk within 3 turns of borrower disclosing death of family member or serious illness: -8",
-        "phase_discipline: Borrower explicitly said loan is not theirs or already paid, agent did NOT call proceed_to_dispute: -6",
-        "phase_discipline: loop_count is 3 or more: -5",
-        "policy_compliance: language_violation count: -5",
-        "resolution_effectiveness: Call ended with borrower saying \"I'll check\" and agent accepted with no follow-up: -5"
+        "empathy_tone: language_violation count is 1, deduct 5",
+        "phase_discipline: Borrower committed to payment but agent never reached closing, deduct 3",
+        "phase_discipline: loop_count is 1, deduct 0",
+        "policy_compliance: language_violation count is 1, deduct 5",
+        "policy_compliance: loop_count is 1, deduct 0",
+        "resolution_effectiveness: Callback scheduled without any specific date or time, deduct 5"
       ],
-      "summary": "The agent failed to properly handle the dispute call after the borrower stated the loan was not hers and that her husband had already paid it off. The agent also failed to acknowledge the borrower's request to speak in Hindi, and the call ended with the agent stating there was a connection issue.",
+      "summary": "The agent failed to provide a WhatsApp number for sending documents, repeatedly directing the customer to email instead. The agent also scheduled a callback without a specific time, then scheduled a callback for 1:15 after the customer requested it.",
       "gate_enforced": false,
       "code_applied": [
         "language_violations=1 -> -5 on empathy_tone and policy_compliance"
@@ -76,16 +82,76 @@
       ],
       "model_used": "gemini-2.0-flash",
       "original_disposition": "BLANK_CALL",
-      "elapsed_seconds": 87.2,
+      "elapsed_seconds": 90.4,
       "prompt_name": "system-prompt-fixed",
       "simulated": true
     },
     {
       "call_id": "call_03",
       "language_violations": 0,
-      "loop_count": 2,
+      "loop_count": 1,
+      "gate_fired": "NONE",
+      "gate_reason": "N/A",
+      "call_type": "DISPUTE",
+      "scores": {
+        "empathy_tone": 17,
+        "phase_discipline": 14,
+        "negotiation_quality": 20,
+        "policy_compliance": 17,
+        "resolution_effectiveness": 9
+      },
+      "total_score": 77,
+      "verdict": "good",
+      "worst_messages": [
+        {
+          "speaker": "agent",
+          "text": "मैं आपके यूटीआर नंबर को नोट कर लिया है। हमारी टीम इसकी जांच करेगी और आपसे संपर्क करेगी।",
+          "reason": "phase_discipline: looping instead of progressing"
+        },
+        {
+          "speaker": "agent",
+          "text": "मैं समझता हूं। मैं विवरण भेज दूंगा। धन्यवाद।",
+          "reason": "resolution_effectiveness: call ended with no follow-up"
+        },
+        {
+          "speaker": "agent",
+          "text": "आप दस्तावेजों को support@demolender.com पर भेज सकते हैं या किसी को भेजने में मदद करने के लिए कह सकते हैं।",
+          "reason": "resolution_effectiveness: call ended with no follow-up"
+        },
+        {
+          "speaker": "agent",
+          "text": "நான் விவரங்களை அனுப்புகிறேன். நன்றி.",
+          "reason": "resolution_effectiveness: call ended with no follow-up"
+        }
+      ],
+      "reasons": [
+        "empathy_tone: Agent ignored borrower complaint about speed, tone, or language: -3",
+        "phase_discipline: loop_count is 3 or more: -5",
+        "policy_compliance: Agent repeated exact same sentence verbatim: -3",
+        "resolution_effectiveness: Callback scheduled without any specific date or time: -5",
+        "policy_compliance: Agent repeated exact same sentence verbatim: -3",
+        "empathy_tone: \"I understand\" used more than 3 times with no substantive follow-up: -3"
+      ],
+      "summary": "The agent initially spoke in Tamil, then switched to Hindi. The borrower repeatedly tried to provide a UTR number, but the agent looped on acknowledging it and scheduling callbacks. The call ended with the agent repeatedly saying \"I understand\" and offering to send details, without resolving the dispute.",
+      "gate_enforced": false,
+      "disposition": "ALREADY_PAID",
+      "phases_visited": [
+        "opening",
+        "discovery",
+        "dispute"
+      ],
+      "model_used": "gemini-2.0-flash",
+      "original_disposition": "ALREADY_PAID",
+      "elapsed_seconds": 132.1,
+      "prompt_name": "system-prompt-fixed",
+      "simulated": true
+    },
+    {
+      "call_id": "call_07",
+      "language_violations": 0,
+      "loop_count": 1,
       "gate_fired": "C",
-      "gate_reason": "The borrower expressed confusion and difficulty understanding the agent for most of the call, and the call ended without a concrete resolution.",
+      "gate_reason": "The borrower expressed confusion and inability to understand for more than half the call duration, and the call ended with no concrete outcome.",
       "call_type": "LANGUAGE_BARRIER",
       "scores": {
         "empathy_tone": 8,
@@ -96,63 +162,32 @@
       },
       "total_score": 40,
       "verdict": "bad",
-      "worst_messages": [],
-      "reasons": [],
-      "summary": "The borrower expressed difficulty understanding the agent's Tamil and requested Hindi. The agent continued to loop on requesting the UTR number and ultimately scheduled a callback. Due to the language barrier and lack of resolution, the call is rated as bad.",
-      "gate_enforced": true,
-      "disposition": "ALREADY_PAID",
-      "phases_visited": [
-        "opening",
-        "discovery",
-        "dispute"
-      ],
-      "model_used": "gemini-2.0-flash",
-      "original_disposition": "ALREADY_PAID",
-      "elapsed_seconds": 122.2,
-      "prompt_name": "system-prompt-fixed",
-      "simulated": true
-    },
-    {
-      "call_id": "call_07",
-      "language_violations": 0,
-      "loop_count": 2,
-      "gate_fired": "NONE",
-      "gate_reason": "N/A",
-      "call_type": "LANGUAGE_BARRIER",
-      "scores": {
-        "empathy_tone": 20,
-        "phase_discipline": 15,
-        "negotiation_quality": 12,
-        "policy_compliance": 20,
-        "resolution_effectiveness": 10
-      },
-      "total_score": 77,
-      "verdict": "good",
       "worst_messages": [
         {
           "speaker": "agent",
-          "text": "உங்களுடைய நிலுவைத் தொகையை முழுவதுமாக தள்ளுபடி செய்து, உங்கள் கடனை வெறும் பூஜ்ஜிய ரூபாயில் முடிக்கும் வாய்ப்பை நாங்கள் வழங்குகிறோம். இதன் மூலம் நீங்கள் ஐம்பதாயிரம் ரூபாய் சேமிக்கலாம்.",
-          "reason": "negotiation_quality: Agent offered loan restructuring -8"
+          "text": "நான் சொல்வது உங்களுக்குப் புரிகிறதா? உங்கள் கடனை பூஜ்ஜிய ரூபாய்க்கு முடிக்கலாம். இதன் மூலம் உங்களுக்கு ஐம்பதாயிரம் ரூபாய் சேமிக்க முடியும்.",
+          "reason": "RESOLUTION_EFFECTIVENESS: Looping without resolution."
         },
         {
           "speaker": "agent",
-          "text": "நான் உங்களை எப்போது அழைக்க வேண்டும்? ஒரு குறிப்பிட்ட தேதியையும் நேரத்தையும் சொல்ல முடியுமா?",
-          "reason": "phase_discipline: loop_count is 2, agent is looping instead of progressing -5"
+          "text": "உங்கள் கடனை பூஜ்ஜிய ரூபாய்க்கு முடிப்பதன் மூலம் ஐம்பதாயிரம் ரூபாய் சேமிக்க முடியும். இந்த வாய்ப்பை நீங்கள் பயன்படுத்திக் கொள்ள விரும்புகிறீர்களா? இந்த வாய்ப்பை இப்போது உறுதி செய்தால், இந்த சலுகை காலாவதியாகாமல் இருக்கும்.",
+          "reason": "RESOLUTION_EFFECTIVENESS: Looping without resolution."
         },
         {
           "speaker": "agent",
-          "text": "நான் உங்களை எப்போது அழைக்க வேண்டும்? ஒரு குறிப்பிட்ட தேதியையும் நேரத்தையும் சொல்ல முடியுமா?",
-          "reason": "resolution_effectiveness: loop_count is 2 AND no resolution reached -5"
+          "text": "உங்கள் கடனை பூஜ்ஜிய ரூபாய்க்கு முடிப்பதன் மூலம் ஐம்பதாயிரம் ரூபாய் சேமிக்க முடியும். இந்த வாய்ப்பை நீங்கள் பயன்படுத்திக் கொள்ள விரும்புகிறீர்களா? இந்த வாய்ப்பை இப்போது உறுதி செய்தால், இந்த சலுகை காலாவதியாகாமல் இருக்கும். உங்கள் கிரெடிட் அறிக்கையில் \"முடிந்தது\" என்று காட்டப்படும். நீங்கள் செலுத்த வேண்டிய ஐம்பதாயிரம் ரூபாயை சேமிக்கலாம்.",
+          "reason": "RESOLUTION_EFFECTIVENESS: Looping without resolution."
         }
       ],
       "reasons": [
-        "phase_discipline: loop_count is 2, agent is looping instead of progressing -5",
-        "negotiation_quality: Agent offered loan restructuring -8",
-        "resolution_effectiveness: Callback scheduled without any specific date or time -5",
-        "resolution_effectiveness: loop_count is 2 AND no resolution reached -5"
+        "EMPATHY_TONE: The borrower is clearly struggling to understand.",
+        "PHASE_DISCIPLINE: The agent is looping instead of progressing.",
+        "NEGOTIATION_QUALITY: The agent is not effectively negotiating due to the language barrier.",
+        "POLICY_COMPLIANCE: The agent is repeating the same sentence verbatim.",
+        "RESOLUTION_EFFECTIVENESS: The call ended with no resolution due to the language barrier."
       ],
-      "summary": "The agent initially struggled with language comprehension but switched to Tamil. The agent offered a loan restructuring and looped on scheduling a callback, but ultimately scheduled one without a specific time. The call ended with a callback scheduled.",
-      "gate_enforced": false,
+      "summary": "The call involved a significant language barrier, with the borrower expressing confusion and difficulty understanding. The agent continued to repeat the same offer without achieving any resolution, leading to a failed call.",
+      "gate_enforced": true,
       "disposition": "LANGUAGE_BARRIER",
       "phases_visited": [
         "opening",
@@ -160,7 +195,7 @@
       ],
       "model_used": "gemini-2.0-flash",
       "original_disposition": "LANGUAGE_BARRIER",
-      "elapsed_seconds": 32.8,
+      "elapsed_seconds": 33.8,
       "prompt_name": "system-prompt-fixed",
       "simulated": true
     },
@@ -191,50 +226,50 @@
       ],
       "model_used": "gemini-2.0-flash",
       "original_disposition": "WRONG_NUMBER",
-      "elapsed_seconds": 9.2,
+      "elapsed_seconds": 9.8,
       "prompt_name": "system-prompt-fixed",
       "simulated": true
     },
     {
       "call_id": "call_09",
       "language_violations": 0,
-      "loop_count": 0,
+      "loop_count": 1,
       "gate_fired": "NONE",
       "gate_reason": "N/A",
-      "call_type": "DISPUTE",
+      "call_type": "INQUIRY",
       "scores": {
         "empathy_tone": 20,
         "phase_discipline": 14,
-        "negotiation_quality": 0,
+        "negotiation_quality": 14,
         "policy_compliance": 20,
-        "resolution_effectiveness": 8
+        "resolution_effectiveness": 15
       },
-      "total_score": 62,
-      "verdict": "bad",
+      "total_score": 83,
+      "verdict": "good",
       "worst_messages": [
         {
           "speaker": "agent",
-          "text": "Yes, I am speaking with Kavita Menon. Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just rupees — saving you the difference.",
-          "reason": "phase_discipline: TOS disclosed before dispute resolution"
+          "text": "Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just rupees — saving you the difference.",
+          "reason": "phase_discipline: TOS amount disclosed before borrower identity confirmed"
         },
         {
           "speaker": "agent",
-          "text": "I understand. Could you tell me a bit about your current situation and what makes it difficult to pay the full outstanding amount right now?",
-          "reason": "negotiation_quality: call did not reach negotiation phase"
+          "text": "```json\n{\n  \"action\": \"proceed_to_dispute\"\n}\n```",
+          "reason": "phase_discipline: loop_count is 3 or more"
         },
         {
           "speaker": "agent",
-          "text": "Okay, I understand. So, you're saying you only have four EMIs pending?",
-          "reason": "negotiation_quality: call did not reach negotiation phase"
+          "text": "```json\n{\n  \"action\": \"proceed_to_dispute\"\n}\n```",
+          "reason": "phase_discipline: loop_count is 3 or more"
         }
       ],
       "reasons": [
-        "phase_discipline: TOS disclosed before dispute resolution -5",
-        "phase_discipline: Borrower explicitly said loan is not theirs or already paid, agent did NOT call proceed_to_dispute -6",
-        "negotiation_quality: call did not reach negotiation phase",
-        "resolution_effectiveness: Dispute call ended with no escalation path given -6"
+        "phase_discipline: TOS amount disclosed before borrower identity confirmed: -5",
+        "phase_discipline: loop_count is 3 or more: -5",
+        "negotiation_quality: Agent never quoted POS (closure amount) during negotiation: -6",
+        "resolution_effectiveness: Callback scheduled without any specific date or time: -5"
       ],
-      "summary": "The agent disclosed the TOS before confirming the borrower's identity and the call ended without a clear resolution to the dispute. The agent did not provide an escalation path for the dispute.",
+      "summary": "The agent disclosed the TOS amount before confirming the borrower's identity. The agent also repeatedly called proceed_to_dispute without any clear reason. The agent scheduled a callback without a specific date or time.",
       "gate_enforced": false,
       "disposition": "INQUIRY",
       "phases_visited": [
@@ -244,7 +279,7 @@
       ],
       "model_used": "gemini-2.0-flash",
       "original_disposition": "INQUIRY",
-      "elapsed_seconds": 24.1,
+      "elapsed_seconds": 23.3,
       "prompt_name": "system-prompt-fixed",
       "simulated": true
     }

@@ -1,0 +1,19 @@
+{
+  "improvements": [
+    {
+      "problem": "Lack of guidance on handling borrower death disclosure leads to insensitive responses.",
+      "prompt_addition": "If the borrower discloses the death of a family member, express sincere condolences and immediately pause all discussion related to debt collection. Offer resources for support and bereavement if available. Only resume discussion when explicitly invited to do so by the borrower.",
+      "addresses": "Addresses the 'Agent continued DPD/credit damage talk within 3 turns of borrower disclosing death of family member' failure in call_02. Provides specific instructions on handling sensitive situations."
+    },
+    {
+      "problem": "Overuse of 'I understand' without demonstrating genuine empathy.",
+      "prompt_addition": "Avoid using the phrase 'I understand' without providing a specific and empathetic follow-up statement. Instead of simply saying 'I understand,' acknowledge the borrower's feelings and explain how you are taking their concerns into account. For example, 'I understand this is frustrating, let me check on available options.'",
+      "addresses": "Addresses the repeated 'I understand used with no substantive follow-up' failures in call_03. Enforces more meaningful empathetic responses."
+    },
+    {
+      "problem": "Agent discloses TOS amount before confirming borrower identity.",
+      "prompt_addition": "REPLACE: ======================================== IDENTITY HANDLING ======================================== You are Alex, a calling agent. Try to avoid saying you are an AI if the customer asks. If they press further, say something like \"I'm just here to help... WITH: ======================================== IDENTITY HANDLING ======================================== First, confirm the borrower's identity using their full name and date of birth (or another secure identifier). NEVER disclose the loan amount or other specific details before confirming identity. You are Alex, a calling agent. Try to avoid saying you are an AI if the customer asks. If they press further, say something like \"I'm just here to help...",
+      "addresses": "Addresses the 'TOS amount disclosed before borrower identity confirmed' failure in call_08. Prioritizes identity verification before sensitive information disclosure, directly targeting the policy violation."
+    }
+  ]
+}

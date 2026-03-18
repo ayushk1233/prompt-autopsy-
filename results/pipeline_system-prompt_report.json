@@ -48,7 +48,7 @@
         {
           "speaker": "agent",
           "text": "जी, मैं समझ गया। मैं कॉलबैक आज ही के लिए शेड्यूल कर देता हूँ। क्या दोपहर में किसी विशिष्ट समय पर आप उपलब्ध रहेंगी?",
-          "reason": "policy_compliance: Agent repeated exact same sentence verbatim"
+          "reason": "resolution_effectiveness: Callback scheduled without any specific date"
         },
         {
           "speaker": "agent",
@@ -58,13 +58,13 @@
       ],
       "reasons": [
         "empathy_tone: Agent continued DPD/credit damage talk within 3 turns of borrower disclosing death of family member: -8",
-        "empathy_tone: language_violation count is 3: -9",
+        "empathy_tone: language_violation count is 3: -15",
         "phase_discipline: Borrower explicitly said loan is not theirs or already paid, agent did call proceed_to_dispute: -6",
         "policy_compliance: language_violation count is 3: -15",
         "policy_compliance: Agent repeated exact same sentence verbatim: -3",
-        "resolution_effectiveness: Callback scheduled without any specific date or time: -5"
+        "resolution_effectiveness: Callback scheduled without any specific date: -5"
       ],
-      "summary": "The agent had multiple language violations and continued to discuss credit damage soon after the borrower disclosed the death of her husband. The agent also repeated the same sentence verbatim and scheduled a callback without a specific date.",
+      "summary": "The agent had multiple language violations and continued to discuss credit damage soon after the borrower disclosed the death of her husband. The agent did schedule a callback, but without a specific date. Despite these issues, the call reached a resolution and the total score was above 60.",
       "gate_enforced": false,
       "code_applied": [
         "language_violations=3 -> -15 on empathy_tone and policy_compliance"
@@ -77,7 +77,7 @@
       ],
       "model_used": "gemini-2.0-flash",
       "original_disposition": "BLANK_CALL",
-      "elapsed_seconds": 4.8,
+      "elapsed_seconds": 4.3,
       "prompt_name": "system-prompt",
       "simulated": false
     },
@@ -144,7 +144,7 @@
       ],
       "model_used": "gemini-2.0-flash",
       "original_disposition": "ALREADY_PAID",
-      "elapsed_seconds": 5.2,
+      "elapsed_seconds": 6.1,
       "prompt_name": "system-prompt",
       "simulated": false
     },
@@ -175,7 +175,7 @@
       ],
       "model_used": "gemini-2.0-flash",
       "original_disposition": "LANGUAGE_BARRIER",
-      "elapsed_seconds": 2.4,
+      "elapsed_seconds": 2.7,
       "prompt_name": "system-prompt",
       "simulated": false
     },
@@ -203,18 +203,18 @@
         },
         {
           "speaker": "agent",
-          "text": "Okay, I understand. It seems I have reached the wrong person. I will go ahead and end this call.",
-          "reason": "policy_compliance: Agent disclosed amount to wrong person"
+          "text": "Suresh Rao, I'm calling about your DemoLender education loan. We're showing a pending amount of fifty thousand rupees. Can you tell me a little about why you haven't been able to make the payments?",
+          "reason": "policy_compliance: TOS amount disclosed before borrower identity confirmed"
         }
       ],
       "reasons": [
-        "empathy_tone: Agent did not handle wrong number with empathy.",
+        "empathy_tone: Agent did not handle the wrong number situation with empathy.",
         "phase_discipline: TOS amount disclosed before borrower identity confirmed.",
-        "negotiation_quality: No negotiation possible due to wrong number.",
-        "policy_compliance: Agent disclosed amount to wrong person.",
+        "negotiation_quality: No negotiation occurred due to wrong number.",
+        "policy_compliance: TOS amount disclosed before borrower identity confirmed.",
         "resolution_effectiveness: Call ended abruptly after wrong number was identified."
       ],
-      "summary": "The agent called the wrong number and disclosed the loan amount before verifying the borrower's identity. This resulted in a policy violation and a failure to handle the situation effectively.",
+      "summary": "The agent called the wrong number and disclosed the loan amount before confirming the borrower's identity, violating policy. The call ended after the agent realized the mistake.",
       "gate_enforced": true,
       "disposition": "WRONG_NUMBER",
       "phases_visited": [
@@ -223,7 +223,7 @@
       ],
       "model_used": "gemini-2.0-flash",
       "original_disposition": "WRONG_NUMBER",
-      "elapsed_seconds": 3.7,
+      "elapsed_seconds": 3.9,
       "prompt_name": "system-prompt",
       "simulated": false
     },
@@ -232,7 +232,7 @@
       "language_violations": 0,
       "loop_count": 0,
       "gate_fired": "D",
-      "gate_reason": "The final 4 agent turns are connectivity checks and the function_calls list does not contain any schedule_callback entry.",
+      "gate_reason": "The final 4 agent turns are connectivity checks and there is no schedule_callback entry in function_calls.",
       "call_type": "NEGOTIATION",
       "scores": {
         "empathy_tone": 12,
@@ -247,27 +247,27 @@
         {
           "speaker": "agent",
           "text": "Hello?",
-          "reason": "resolution_effectiveness: Call dropped, no resolution reached"
+          "reason": "resolution_effectiveness: Call dropped, no resolution reached."
         },
         {
           "speaker": "agent",
           "text": "Are you there?",
-          "reason": "resolution_effectiveness: Call dropped, no resolution reached"
+          "reason": "resolution_effectiveness: Call dropped, no resolution reached."
         },
         {
           "speaker": "agent",
           "text": "Kavita Menon, can you hear me?",
-          "reason": "resolution_effectiveness: Call dropped, no resolution reached"
+          "reason": "resolution_effectiveness: Call dropped, no resolution reached."
         }
       ],
       "reasons": [
-        "empathy_tone: Call dropped, no empathy possible.",
-        "phase_discipline: Call dropped, no phase discipline possible.",
-        "negotiation_quality: Call dropped, no negotiation possible.",
-        "policy_compliance: Call dropped, no policy compliance possible.",
+        "empathy_tone: No issues detected.",
+        "phase_discipline: No issues detected.",
+        "negotiation_quality: No issues detected.",
+        "policy_compliance: No issues detected.",
         "resolution_effectiveness: Call dropped, no resolution reached."
       ],
-      "summary": "The call involved a negotiation about a settlement amount. The call ended abruptly due to a connection issue, and the agent did not schedule a callback before ending the call.",
+      "summary": "The call reached the negotiation phase, but the call dropped and the agent did not schedule a callback. The agent ended the call with connectivity checks.",
       "gate_enforced": true,
       "disposition": "INQUIRY",
       "phases_visited": [
@@ -277,7 +277,7 @@
       ],
       "model_used": "gemini-2.0-flash",
       "original_disposition": "INQUIRY",
-      "elapsed_seconds": 3.6,
+      "elapsed_seconds": 3.2,
       "prompt_name": "system-prompt",
       "simulated": false
     }

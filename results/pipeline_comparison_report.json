@@ -2,67 +2,28 @@
   "prompt_before": "system-prompt.md",
   "prompt_after": "system-prompt-fixed.md",
   "avg_score_before": 44.6,
-  "avg_score_after": 64.4,
-  "avg_score_delta": 19.8,
+  "avg_score_after": 69.6,
+  "avg_score_delta": 25.0,
   "good_calls_before": 0,
-  "good_calls_after": 2,
+  "good_calls_after": 3,
   "good_rate_before": 0.0,
-  "good_rate_after": 40.0,
+  "good_rate_after": 60.0,
   "calls_improved": [
-    "call_07",
+    "call_02",
+    "call_03",
     "call_08",
     "call_09"
   ],
-  "calls_degraded": [
-    "call_03"
-  ],
+  "calls_degraded": [],
   "calls_unchanged": [
-    "call_02"
+    "call_07"
   ],
   "verdict_flips": [
     {
-      "call_id": "call_07",
-      "score_before": 40,
-      "score_after": 77,
-      "delta": 37,
-      "verdict_before": "bad",
-      "verdict_after": "good",
-      "verdict_changed": true
-    },
-    {
-      "call_id": "call_08",
-      "score_before": 20,
-      "score_after": 92,
-      "delta": 72,
-      "verdict_before": "bad",
-      "verdict_after": "good",
-      "verdict_changed": true
-    }
-  ],
-  "per_call_diff": [
-    {
-      "call_id": "call_02",
-      "score_before": 49,
-      "score_after": 51,
-      "delta": 2,
-      "verdict_before": "bad",
-      "verdict_after": "bad",
-      "verdict_changed": false
-    },
-    {
       "call_id": "call_03",
       "score_before": 61,
-      "score_after": 40,
-      "delta": -21,
-      "verdict_before": "bad",
-      "verdict_after": "bad",
-      "verdict_changed": false
-    },
-    {
-      "call_id": "call_07",
-      "score_before": 40,
       "score_after": 77,
-      "delta": 37,
+      "delta": 16,
       "verdict_before": "bad",
       "verdict_after": "good",
       "verdict_changed": true
@@ -79,18 +40,65 @@
     {
       "call_id": "call_09",
       "score_before": 53,
-      "score_after": 62,
-      "delta": 9,
+      "score_after": 83,
+      "delta": 30,
+      "verdict_before": "bad",
+      "verdict_after": "good",
+      "verdict_changed": true
+    }
+  ],
+  "per_call_diff": [
+    {
+      "call_id": "call_02",
+      "score_before": 49,
+      "score_after": 56,
+      "delta": 7,
       "verdict_before": "bad",
       "verdict_after": "bad",
       "verdict_changed": false
+    },
+    {
+      "call_id": "call_03",
+      "score_before": 61,
+      "score_after": 77,
+      "delta": 16,
+      "verdict_before": "bad",
+      "verdict_after": "good",
+      "verdict_changed": true
+    },
+    {
+      "call_id": "call_07",
+      "score_before": 40,
+      "score_after": 40,
+      "delta": 0,
+      "verdict_before": "bad",
+      "verdict_after": "bad",
+      "verdict_changed": false
+    },
+    {
+      "call_id": "call_08",
+      "score_before": 20,
+      "score_after": 92,
+      "delta": 72,
+      "verdict_before": "bad",
+      "verdict_after": "good",
+      "verdict_changed": true
+    },
+    {
+      "call_id": "call_09",
+      "score_before": 53,
+      "score_after": 83,
+      "delta": 30,
+      "verdict_before": "bad",
+      "verdict_after": "good",
+      "verdict_changed": true
     }
   ],
   "dimension_delta": {
-    "empathy_tone": 5.2,
-    "phase_discipline": 5.2,
-    "negotiation_quality": 1.2,
-    "policy_compliance": 7.0,
-    "resolution_effectiveness": 1.2
+    "empathy_tone": 4.6,
+    "phase_discipline": 5.0,
+    "negotiation_quality": 5.6,
+    "policy_compliance": 6.4,
+    "resolution_effectiveness": 3.4
   }
 }
