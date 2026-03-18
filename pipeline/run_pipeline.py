@@ -5,10 +5,16 @@ Full prompt evaluation pipeline.
 Takes a system prompt + transcript folder → simulates + evaluates → report.
 
 Usage:
+    # Score all transcripts with one prompt
     python pipeline/run_pipeline.py --prompt system-prompt.md --transcripts transcripts/
-    python pipeline/run_pipeline.py --prompt system-prompt-fixed.md --transcripts transcripts/
+
+    # Score originals vs simulate fixed prompt — shows real per-call improvement
     python pipeline/run_pipeline.py --prompt system-prompt.md --prompt2 system-prompt-fixed.md \
-                                    --transcripts transcripts/
+                                    --transcripts transcripts/ --simulate-prompt2
+
+    # Score original transcripts under both prompts (fast, no simulation cost)
+    python pipeline/run_pipeline.py --prompt system-prompt.md --prompt2 system-prompt-fixed.md \
+                                    --transcripts transcripts/ --no-simulate
 
 Output:
     results/pipeline_<prompt_name>_report.json
@@ -288,11 +294,19 @@ Examples:
     parser.add_argument("--output",       default="results/", help="Output directory")
     parser.add_argument("--no-simulate",  action="store_true",
                         help="Score original transcripts without simulation")
+    parser.add_argument("--simulate-prompt2", action="store_true",
+                        help="Score prompt1 on originals, simulate prompt2 — shows real improvement")
     parser.add_argument("--max-calls",    type=int, default=None,
                         help="Limit number of calls (for quick testing)")
+    parser.add_argument("--calls",        nargs="+", default=None,
+                        help="Only run specific call IDs e.g. --calls call_02 call_03 call_07")
     args = parser.parse_args()
 
-    simulate = not args.no_simulate
+    simulate         = not args.no_simulate
+    simulate_prompt2 = args.simulate_prompt2
+    # --simulate-prompt2 implies prompt1 runs on originals, prompt2 runs with simulation
+    if simulate_prompt2:
+        simulate = False
 
     # Load transcripts
     transcript_paths = sorted(Path(args.transcripts).glob("*.json"))
@@ -312,6 +326,10 @@ Examples:
             pass
     transcript_paths = valid_paths
 
+    if args.calls:
+        transcript_paths = [tp for tp in transcript_paths if tp.stem in args.calls]
+        print(f"Filtering to : {[tp.stem for tp in transcript_paths]}")
+
     if args.max_calls:
         transcript_paths = transcript_paths[:args.max_calls]
 
@@ -322,7 +340,10 @@ Examples:
     print(f"Provider    : {os.getenv('LLM_PROVIDER', 'gemini').upper()}")
     print(f"Model       : {active_model()}")
     print(f"Transcripts : {len(transcript_paths)} calls")
-    print(f"Simulate    : {simulate}")
+    if simulate_prompt2:
+        print(f"Simulate    : prompt1=original | prompt2=simulated  (asymmetric comparison)")
+    else:
+        print(f"Simulate    : {simulate}")
 
     client         = get_client()
     scoring_prompt = load_scoring_prompt()
@@ -341,9 +362,10 @@ Examples:
 
     # ── Run prompt 2 and compare ──
     if args.prompt2:
+        simulate2 = True if simulate_prompt2 else simulate
         report2 = run_single_prompt(
             args.prompt2, transcript_paths, client, scoring_prompt,
-            simulate=simulate, label=Path(args.prompt2).stem,
+            simulate=simulate2, label=Path(args.prompt2).stem,
         )
         report2_path = output_dir / f"pipeline_{Path(args.prompt2).stem}_report.json"
         with open(report2_path, "w", encoding="utf-8") as f:

@@ -1,44 +1,50 @@
 {
   "prompt_before": "system-prompt.md",
   "prompt_after": "system-prompt-fixed.md",
-  "avg_score_before": 64.5,
-  "avg_score_after": 65.4,
-  "avg_score_delta": 0.9,
-  "good_calls_before": 5,
-  "good_calls_after": 5,
-  "good_rate_before": 50.0,
-  "good_rate_after": 50.0,
+  "avg_score_before": 44.6,
+  "avg_score_after": 64.4,
+  "avg_score_delta": 19.8,
+  "good_calls_before": 0,
+  "good_calls_after": 2,
+  "good_rate_before": 0.0,
+  "good_rate_after": 40.0,
   "calls_improved": [
-    "call_06"
-  ],
-  "calls_degraded": [],
-  "calls_unchanged": [
-    "call_01",
-    "call_02",
-    "call_03",
-    "call_04",
-    "call_05",
     "call_07",
     "call_08",
-    "call_09",
-    "call_10"
+    "call_09"
   ],
-  "verdict_flips": [],
-  "per_call_diff": [
+  "calls_degraded": [
+    "call_03"
+  ],
+  "calls_unchanged": [
+    "call_02"
+  ],
+  "verdict_flips": [
     {
-      "call_id": "call_01",
-      "score_before": 80,
-      "score_after": 80,
-      "delta": 0,
-      "verdict_before": "good",
+      "call_id": "call_07",
+      "score_before": 40,
+      "score_after": 77,
+      "delta": 37,
+      "verdict_before": "bad",
       "verdict_after": "good",
-      "verdict_changed": false
+      "verdict_changed": true
     },
+    {
+      "call_id": "call_08",
+      "score_before": 20,
+      "score_after": 92,
+      "delta": 72,
+      "verdict_before": "bad",
+      "verdict_after": "good",
+      "verdict_changed": true
+    }
+  ],
+  "per_call_diff": [
     {
       "call_id": "call_02",
       "score_before": 49,
-      "score_after": 49,
-      "delta": 0,
+      "score_after": 51,
+      "delta": 2,
       "verdict_before": "bad",
       "verdict_after": "bad",
       "verdict_changed": false
@@ -46,81 +52,45 @@
     {
       "call_id": "call_03",
       "score_before": 61,
-      "score_after": 61,
-      "delta": 0,
+      "score_after": 40,
+      "delta": -21,
       "verdict_before": "bad",
       "verdict_after": "bad",
-      "verdict_changed": false
-    },
-    {
-      "call_id": "call_04",
-      "score_before": 76,
-      "score_after": 76,
-      "delta": 0,
-      "verdict_before": "good",
-      "verdict_after": "good",
-      "verdict_changed": false
-    },
-    {
-      "call_id": "call_05",
-      "score_before": 87,
-      "score_after": 87,
-      "delta": 0,
-      "verdict_before": "good",
-      "verdict_after": "good",
-      "verdict_changed": false
-    },
-    {
-      "call_id": "call_06",
-      "score_before": 79,
-      "score_after": 88,
-      "delta": 9,
-      "verdict_before": "good",
-      "verdict_after": "good",
       "verdict_changed": false
     },
     {
       "call_id": "call_07",
       "score_before": 40,
-      "score_after": 40,
-      "delta": 0,
+      "score_after": 77,
+      "delta": 37,
       "verdict_before": "bad",
-      "verdict_after": "bad",
-      "verdict_changed": false
+      "verdict_after": "good",
+      "verdict_changed": true
     },
     {
       "call_id": "call_08",
       "score_before": 20,
-      "score_after": 20,
-      "delta": 0,
+      "score_after": 92,
+      "delta": 72,
       "verdict_before": "bad",
-      "verdict_after": "bad",
-      "verdict_changed": false
+      "verdict_after": "good",
+      "verdict_changed": true
     },
     {
       "call_id": "call_09",
       "score_before": 53,
-      "score_after": 53,
-      "delta": 0,
+      "score_after": 62,
+      "delta": 9,
       "verdict_before": "bad",
       "verdict_after": "bad",
-      "verdict_changed": false
-    },
-    {
-      "call_id": "call_10",
-      "score_before": 100,
-      "score_after": 100,
-      "delta": 0,
-      "verdict_before": "good",
-      "verdict_after": "good",
       "verdict_changed": false
     }
   ],
   "dimension_delta": {
-    "empathy_tone": 0.3,
-    "phase_discipline": 0.6,
-    "negotiation_quality": 0.0,
-    "policy_compliance": 0.0,
-    "resolution_effectiveness": 0.0
+    "empathy_tone": 5.2,
+    "phase_discipline": 5.2,
+    "negotiation_quality": 1.2,
+    "policy_compliance": 7.0,
+    "resolution_effectiveness": 1.2
   }
 }
