@@ -1,0 +1,49 @@
+{
+  "call_id": "call_05",
+  "language_violations": 0,
+  "loop_count": 0,
+  "gate_fired": "NONE",
+  "gate_reason": "N/A",
+  "call_type": "FULL_FLOW",
+  "scores": {
+    "empathy_tone": 20,
+    "phase_discipline": 20,
+    "negotiation_quality": 12,
+    "policy_compliance": 20,
+    "resolution_effectiveness": 15
+  },
+  "total_score": 87,
+  "verdict": "good",
+  "worst_messages": [
+    {
+      "speaker": "agent",
+      "text": "Okay, you'd like to pay five thousand three hundred rupees",
+      "reason": "negotiation_quality: Agent offered any invented installment plan -8"
+    },
+    {
+      "speaker": "agent",
+      "text": "Understood. You want to start paying five thousand three hundred rupees monthly, beginning April first. We can certainly set up a payment plan for you. Let me confirm the exact details of your outstanding balance and how we can best accommodate your request while addressing your concerns about additional charges. I see here that your current pending amount is forty-eight thousand seventy-five rupees. We can remove penalty charges from that amount. Would you like me to proceed with a payment plan of five thousand three hundred rupees per month?",
+      "reason": "negotiation_quality: Agent offered any invented installment plan -8"
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, so you'll contact Mr. Rajan Kumar to receive the payment link on your other number, and you'll make the payments every",
+      "reason": "resolution_effectiveness: Callback scheduled without any specific date or time -5"
+    }
+  ],
+  "reasons": [
+    "negotiation_quality: Agent offered any invented installment plan -8",
+    "resolution_effectiveness: Callback scheduled without any specific date or time -5",
+    "phase_discipline: Borrower committed to payment but agent never reached closing -3"
+  ],
+  "summary": "The agent offered an invented installment plan, which is a deduction. The agent also scheduled a callback without a specific time and did not reach a closing statement. The call resulted in a STRONGEST_PTP disposition.",
+  "gate_enforced": false,
+  "disposition": "STRONGEST_PTP",
+  "phases_visited": [
+    "opening",
+    "discovery",
+    "dispute",
+    "negotiation"
+  ],
+  "model_used": "gemini-2.0-flash"
+}

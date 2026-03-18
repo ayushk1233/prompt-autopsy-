@@ -1,0 +1,97 @@
+{
+  "accuracy": 80.0,
+  "correct": 8,
+  "total": 10,
+  "per_call": [
+    {
+      "call_id": "call_01",
+      "gate": "NONE",
+      "language_violations": 0,
+      "loop_count": 0,
+      "our_verdict": "good",
+      "ground_truth": "good",
+      "match": true
+    },
+    {
+      "call_id": "call_02",
+      "gate": "NONE",
+      "language_violations": 3,
+      "loop_count": 0,
+      "our_verdict": "bad",
+      "ground_truth": "bad",
+      "match": true
+    },
+    {
+      "call_id": "call_03",
+      "gate": "NONE",
+      "language_violations": 0,
+      "loop_count": 3,
+      "our_verdict": "bad",
+      "ground_truth": "bad",
+      "match": true
+    },
+    {
+      "call_id": "call_04",
+      "gate": "NONE",
+      "language_violations": 0,
+      "loop_count": 1,
+      "our_verdict": "good",
+      "ground_truth": "good",
+      "match": true
+    },
+    {
+      "call_id": "call_05",
+      "gate": "NONE",
+      "language_violations": 0,
+      "loop_count": 0,
+      "our_verdict": "good",
+      "ground_truth": "good",
+      "match": true
+    },
+    {
+      "call_id": "call_06",
+      "gate": "NONE",
+      "language_violations": 0,
+      "loop_count": 0,
+      "our_verdict": "good",
+      "ground_truth": "good",
+      "match": true
+    },
+    {
+      "call_id": "call_07",
+      "gate": "C",
+      "language_violations": 0,
+      "loop_count": 0,
+      "our_verdict": "bad",
+      "ground_truth": "bad",
+      "match": true
+    },
+    {
+      "call_id": "call_08",
+      "gate": "B",
+      "language_violations": 0,
+      "loop_count": 0,
+      "our_verdict": "bad",
+      "ground_truth": "good",
+      "match": false
+    },
+    {
+      "call_id": "call_09",
+      "gate": "D",
+      "language_violations": 0,
+      "loop_count": 0,
+      "our_verdict": "bad",
+      "ground_truth": "bad",
+      "match": true
+    },
+    {
+      "call_id": "call_10",
+      "gate": "NONE",
+      "language_violations": 0,
+      "loop_count": 0,
+      "our_verdict": "good",
+      "ground_truth": "bad",
+      "match": false
+    }
+  ]
+}

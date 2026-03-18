@@ -1,0 +1,63 @@
+{
+  "call_id": "call_03",
+  "language_violations": 0,
+  "loop_count": 3,
+  "gate_fired": "NONE",
+  "gate_reason": "N/A",
+  "call_type": "DISPUTE",
+  "scores": {
+    "empathy_tone": 17,
+    "phase_discipline": 6,
+    "negotiation_quality": 14,
+    "policy_compliance": 14,
+    "resolution_effectiveness": 10
+  },
+  "total_score": 61,
+  "verdict": "bad",
+  "worst_messages": [
+    {
+      "speaker": "agent",
+      "text": "Okay, I understand you've already made a payment of nine thousand nine hundred and eight rupees and have a UTR number. I hear your frustration about this.",
+      "reason": "empathy_tone: I understand used with no substantive follow-up -3"
+    },
+    {
+      "speaker": "agent",
+      "text": "जी, मैं समझ सकता हूँ कि आपने नौ हज़ार नौ सौ आठ रुपये जमा किए हैं। मैं यह भी समझता हूँ कि आपके क्रेडिट स्कोर पर इसका असर हो रहा होगा क्योंकि आपके भुगतान में देरी के अब तीन सौ तैंतीस दिन हो गए हैं। क्या आप मुझे अपना यूटीआर नंबर बता सकती हैं ताकि मैं इसे सत्यापित कर सकूँ?",
+      "reason": "empathy_tone: I understand used with no substantive follow-up -3"
+    },
+    {
+      "speaker": "agent",
+      "text": "मुझे आपके भुगतान के सत्यापन के लिए यूटीआर नंबर की आवश्यकता होगी। क्या आप कृपया मुझे वह नंबर बता सकती हैं?",
+      "reason": "phase_discipline: loop_count is 3 or more: -5"
+    },
+    {
+      "speaker": "agent",
+      "text": "माफ़ कीजिएगा, मेरी हिंदी में बात करने की क्षमता सीमित है। अगर आप चाहें तो मैं तमिल में बात कर सकता हूँ, या मैं अंग्रेजी में भी बात कर सकता हूँ। आप किस भाषा में बात करना पसंद करेंगी?",
+      "reason": "policy_compliance: Agent repeated exact same sentence verbatim: -3"
+    },
+    {
+      "speaker": "agent",
+      "text": "आपका क्रेडिट स्कोर प्रभावित हो रहा है क्योंकि आपके भुगतान में देरी के अब तीन सौ तैंतीस दिन हो गए हैं। अगर यह भुगतान सत्यापित नहीं होता है, तो यह आपके क्रेडिट रिपोर्ट पर नकारात्मक असर डालना जारी रखेगा। क्या आप कुछ और जानकारी देना चाहेंगी जो मुझे इसे खोजने में मदद कर सके?",
+      "reason": "resolution_effectiveness: loop_count is 3 or more AND no resolution reached: -5"
+    }
+  ],
+  "reasons": [
+    "empathy_tone: I understand used more than 3 times with no substantive follow-up: -3",
+    "phase_discipline: loop_count is 3 or more: -5",
+    "policy_compliance: Agent repeated exact same sentence verbatim: -3",
+    "policy_compliance: Agent repeated exact same sentence verbatim: -3",
+    "resolution_effectiveness: Callback scheduled without any specific date or time: -5"
+  ],
+  "summary": "The agent had difficulty understanding the customer's UTR number and repeatedly asked for it. The agent also used \"I understand\" multiple times without providing substantive follow-up. The call ended without a clear resolution.",
+  "gate_enforced": false,
+  "code_applied": [
+    "loop_count=3 -> -5 on phase_discipline"
+  ],
+  "disposition": "ALREADY_PAID",
+  "phases_visited": [
+    "opening",
+    "discovery",
+    "dispute"
+  ],
+  "model_used": "gemini-2.0-flash"
+}

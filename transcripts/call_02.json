@@ -1,0 +1,690 @@
+{
+  "call_id": "call_02",
+  "duration_seconds": 0,
+  "total_turns": 82,
+  "customer": {
+    "name": "Rahul Verma",
+    "pending_amount": "fifty thousand",
+    "closure_amount": "zero",
+    "settlement_amount": "",
+    "dpd": "180"
+  },
+  "disposition": "BLANK_CALL",
+  "phases_visited": [
+    "opening",
+    "discovery",
+    "dispute"
+  ],
+  "transcript": [
+    {
+      "speaker": "agent",
+      "text": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, you have fifty thousand rupees pending. Has there been any difficulty with this payment?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Please amount repeat."
+    },
+    {
+      "speaker": "agent",
+      "text": "Theek नमस्ते, hai, main aapke आपके saath अट्ठाईस Hindi mein baat हज़ार karta hoon. पाँच"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां बोलिए."
+    },
+    {
+      "speaker": "agent",
+      "text": "सौ बयासी रुपये बकाया हैं।"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, give me just a moment..."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, Rahul, I understand. I was calling regarding your DemoLender loan. It shows an outstanding amount of thirty-five thousand five hundred and eighty-eight rupees. Could you tell me what's causing the delay in making your payments?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes. बोलिए."
+    },
+    {
+      "speaker": "customer",
+      "text": "Sir कौन सा payment?"
+    },
+    {
+      "speaker": "agent",
+      "text": "नमस्ते, मैं अभिषेक बात कर"
+    },
+    {
+      "speaker": "customer",
+      "text": "मैंने कोई loan नहीं लिया था."
+    },
+    {
+      "speaker": "agent",
+      "text": "नमस्ते मैम, मैं अभिषेक बोल रहा हूँ रिवरलाइन से। हम प्रोपेलिड के साथ शिक्षा"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां बोलिए."
+    },
+    {
+      "speaker": "agent",
+      "text": "आपका जो प्रोपेलिड का लोन है, उसमे पैंतीस हज़ार पाँच सौ अट्ठासी रुपये बकाया दिख रहे हैं। क्या आप बता सकती हैं कि आपको भुगतान करने में क्या परेशानी आ रही है?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Sir मेरे husband ने loan करवाया था."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है, मैं समझ गया।"
+    },
+    {
+      "speaker": "customer",
+      "text": "ठीक है? लेकिन उन्होंने"
+    },
+    {
+      "speaker": "agent",
+      "text": "जी।"
+    },
+    {
+      "speaker": "customer",
+      "text": "था कि मैंने पूरा payment कर दिया है. नाम मेरे था, लेकिन payment वह करते थे अपने account से करते थे ना ही मेरे account से नहीं होता था यह payment."
+    },
+    {
+      "speaker": "agent",
+      "text": "जी, मैं समझ गया। तो आपके पति ने आपको बताया था कि उन्होंने पूरा भुगतान कर दिया है?"
+    },
+    {
+      "speaker": "customer",
+      "text": "जी हां."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है। तो"
+    },
+    {
+      "speaker": "customer",
+      "text": "और उनकी अभी seventh March दो हज़ार"
+    },
+    {
+      "speaker": "customer",
+      "text": "2025 को death हो गई है."
+    },
+    {
+      "speaker": "agent",
+      "text": "मैं आपके"
+    },
+    {
+      "speaker": "customer",
+      "text": "है ना? तो अब मेरे पास documents हां."
+    },
+    {
+      "speaker": "agent",
+      "text": "मुझे यह सुनकर बहुत अफ़सोस"
+    },
+    {
+      "speaker": "customer",
+      "text": "आज 1 year हो गया."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है। मुझे यह सुनकर बहुत अफ़सोस है। क्या आपके पास उनकी मृत्यु से जुड़े कोई दस्तावेज़ हैं?"
+    },
+    {
+      "speaker": "customer",
+      "text": "जी हां, है ना sir?"
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है। क्या आप उन दस्तावेज़ों की एक प्रति हमें उपलब्ध करा सकती हैं? इससे हमें आपकी स्थिति को समझने में मदद मिलेगी।"
+    },
+    {
+      "speaker": "customer",
+      "text": "जी हां, बिल्कुल सकती हूं. इस number पर मैं send कर सकती हूं क्या?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I am so sorry to hear about your husband's passing, Rahul. That must be incredibly difficult. I understand this situation with the loan is complicated, especially with him having handled it. I want to clarify that even though there's a dispute, at six hundred and sixty-eight days past due, every month adds another negative entry to the credit report. Banks only see an unpaid loan. Resolving the payment does not mean giving up the dispute. You can still pursue it separately. It"
+    },
+    {
+      "speaker": "customer",
+      "text": "अभी अभिषेक जी पहले आप मुझे हिंदी में बात करिए. मैं बार बार request कर रही हूं आपको"
+    },
+    {
+      "speaker": "customer",
+      "text": "हिंदी में बात करिए, लेकिन आप english में repeat करे चले जा रहे हैं."
+    },
+    {
+      "speaker": "customer",
+      "text": "और जब आपको मेरी हिंदी से problem हो रही है तो फिर आप मुझे तो english से भी हो रही है ना?"
+    },
+    {
+      "speaker": "agent",
+      "text": "मुझे माफ़ करना, मैं आपकी बात समझ गया हूँ। अब से मैं आपसे हिंदी में ही बात करूँगा।"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां जब मैं आपसे हिंदी हिंदी बोल रही हूं आप बार बार english में बोले चले जा रहे हैं."
+    },
+    {
+      "speaker": "agent",
+      "text": "मैं समझ सकता हूँ कि आपको परेशानी"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां? जब आपको हिंदी से problem हो रही है आप हिंदी में रह रहे हैं अगर कोई भी हिंदी"
+    },
+    {
+      "speaker": "customer",
+      "text": "english नहीं आ रही है तो आप english english में बोले चले जा रहे हैं."
+    },
+    {
+      "speaker": "agent",
+      "text": "मुझे बहुत खेद है। मैं आपकी बात"
+    },
+    {
+      "speaker": "customer",
+      "text": "मैं बोल रही हूं कि मेरे husband, मैं आपके लिए एक request यह भी कर रही हूं"
+    },
+    {
+      "speaker": "agent",
+      "text": "जी,"
+    },
+    {
+      "speaker": "customer",
+      "text": "loan भले मेरे नाम से था, लेकिन मेरे husband के account से आप चाहें तो ये सारी documents मंगवा सकते हैं"
+    },
+    {
+      "speaker": "customer",
+      "text": "कि उनके account से ही पैसा कटता था."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक"
+    },
+    {
+      "speaker": "customer",
+      "text": "एक उनके कुछ papers वगैरह और कुछ miss हो गए थे तो उन्होंने मैं उनकी wife हूं और उन्होंने loan कराया होगा मुझे नहीं पता लेकिन उन्होंने यह था कि पूरा payment कर दिया था उन्होंने मुझसे यही कहा"
+    },
+    {
+      "speaker": "agent",
+      "text": "जी,"
+    },
+    {
+      "speaker": "customer",
+      "text": "Company से मुझे कई बार call आता रहा तो उन्होंने मेरे husband से पुछा कि मुझे call क्यों आ रहे हैं?"
+    },
+    {
+      "speaker": "agent",
+      "text": "जी, मैं"
+    },
+    {
+      "speaker": "customer",
+      "text": "तो बोले payment तो मैंने पूरा कर दिया है एक रुपए भी नहीं balance है यह company वाले क्यों परेशान कर रहे हैं?"
+    },
+    {
+      "speaker": "agent",
+      "text": "मैं आपकी बात समझ गया हूँ।"
+    },
+    {
+      "speaker": "customer",
+      "text": "तो sir मेरी आपकी, हां और मेरी आप से request है है ना? मैं आपको मैं उनको यानी मैं उनका"
+    },
+    {
+      "speaker": "customer",
+      "text": "death certificate भी अभी send कर सकती हूं आपको"
+    },
+    {
+      "speaker": "agent",
+      "text": "मैं समझ"
+    },
+    {
+      "speaker": "customer",
+      "text": "अगर आप मुझे number provide करा देते हैं."
+    },
+    {
+      "speaker": "customer",
+      "text": "मुझे किस number पर वह message करना होगा?"
+    },
+    {
+      "speaker": "agent",
+      "text": "जी,"
+    },
+    {
+      "speaker": "customer",
+      "text": "Please मुझे help कीजिए क्योंकि मैं एक housewife हूं, है ना? Loan में नहीं complete यानी loan तो हमारा complete हो चुका है. कोई बकाया रहती नहीं है. Company कैसे blame कर रही है कि इतना पैसा रह गया, उतना पैसा रह गया."
+    },
+    {
+      "speaker": "agent",
+      "text": "मैं आपकी स्थिति समझ सकता हूँ। यह बहुत ही मुश्किल स्थिति है। आपने बताया कि आपके पति ने कहा था कि लोन पूरा चुका दिया गया है और अब आपके पास उनका डेथ सर्टिफिकेट भी है। मैं आपकी इस बात की पूरी तरह से जांच करवाऊँगा।"
+    },
+    {
+      "speaker": "customer",
+      "text": "जी हां."
+    },
+    {
+      "speaker": "agent",
+      "text": "इस समय आपके प्रॉपरल लोन पर पैंतीस हज़ार पांच सौ अठासी रुपये बकाया दिख रहा है। मुझे पता है कि आप इस बात से सहमत नहीं हैं, और आप कह रही हैं कि आपके पति ने इसका पूरा भुगतान कर दिया था।"
+    },
+    {
+      "speaker": "customer",
+      "text": "जी हां."
+    },
+    {
+      "speaker": "agent",
+      "text": "हेलो?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello hello."
+    },
+    {
+      "speaker": "agent",
+      "text": "जी आप मुझे सुन पा रही हैं?"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां जी, जी sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है। मैं आपकी इस बात की पूरी तरह से जांच करवाऊँगा कि लोन का भुगतान हो गया था या नहीं। चूंकि आपने बताया कि आपके पति ने कहा था कि लोन पूरा चुका दिया गया है, तो हम इसकी पुष्टि करेंगे। साथ ही, आपने डेथ सर्टिफिकेट भेजने की बात कही है,"
+    },
+    {
+      "speaker": "customer",
+      "text": "और यह"
+    },
+    {
+      "speaker": "agent",
+      "text": "तो उसके लिए मैं आपको बता देता"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां मैं दो सौ रुपए payment भेज सकती हूं. और मुझे अगर"
+    },
+    {
+      "speaker": "agent",
+      "text": "जी,"
+    },
+    {
+      "speaker": "customer",
+      "text": "जो भी company का loan बता रहे हैं"
+    },
+    {
+      "speaker": "customer",
+      "text": "husband PhonePe से भी payment करते थे"
+    },
+    {
+      "speaker": "customer",
+      "text": "क्या वह उसकी details send कर सकते हैं जिस number से वह payment करते थे?"
+    },
+    {
+      "speaker": "agent",
+      "text": "जी"
+    },
+    {
+      "speaker": "customer",
+      "text": "Company मुझे वह भी number provide नहीं रही है."
+    },
+    {
+      "speaker": "agent",
+      "text": "जी, मैं समझ गया। आप जानना चाहती हैं कि आपके पति ने किस नंबर से पेमेंट किया था और आप उनके पेमेंट डिटेल्स भी देखना"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां जी."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है। और आप कह रही हैं कि आप अभी दो सौ रुपये का भुगतान कर सकती हैं?"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां."
+    },
+    {
+      "speaker": "customer",
+      "text": "दो सौ रुपए, क्यों?"
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है। तो, आप यह चाहती हैं कि हम पहले आपके पति के पेमेंट डिटेल्स की जांच करें, यह देखें कि क्या लोन का पूरा भुगतान हो गया था जैसा कि उन्होंने बताया था, और फिर आप दो सौ रुपये का भुगतान करने के लिए"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां जी."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है। मैं आपकी पूरी सहायता करूँगा। मैं अभी नोट कर लेता हूँ कि आप हमें अपने पति का मृत्यु प्रमाण पत्र भेजेंगी और हम उस पेमेंट नंबर की भी जांच करेंगे जिसके बारे में आप बात कर रही हैं। यह सब जानने के बाद,"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां, मुझे यह बताए."
+    },
+    {
+      "speaker": "customer",
+      "text": "मुझे यह चाहिए कि मैं मेरे husband ने payment पूरा कर दिया मेरे तरफ़ से पूरा clear है. यानी husband की तरफ़ से है ना? अब वह तो रहा है नहीं लेकिन वह जिस number से payment करते थे क्या वह मुझे"
+    },
+    {
+      "speaker": "customer",
+      "text": "उसकी details send कर सकते हैं? Company कर सकती है?"
+    },
+    {
+      "speaker": "agent",
+      "text": "जी, मैं समझ गया। आप उनके पेमेंट डिटेल्स चाहती हैं। मैं इसकी जांच करवाऊँगा कि क्या हम आपको वो डिटेल्स दे सकते"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां और अगर हां"
+    },
+    {
+      "speaker": "agent",
+      "text": "एक बात बताइए,"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां जी. हां बिल्कुल और मैं कभी भी अपना मैं bank account से ही transfer करती हूं."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है।"
+    },
+    {
+      "speaker": "customer",
+      "text": "मेरे account से तो पैसा गया नहीं है. उन्हीं के account से गया है और उन्होंने पूरा clear कर दिया था sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "जी,"
+    },
+    {
+      "speaker": "customer",
+      "text": "वह भी बकाया राशि नहीं है. इसको close कीजिए. Death certificate मैं आपको send कर दे रही हूं."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है।"
+    },
+    {
+      "speaker": "customer",
+      "text": "आप इसको देखकर तो आप believe करेंगे कि बंदा अब नहीं रहा है"
+    },
+    {
+      "speaker": "agent",
+      "text": "हाँ,"
+    },
+    {
+      "speaker": "customer",
+      "text": "मैं कोई भी amount नहीं pay कर पाऊंगी क्योंकि मैं एक simple housewife हूं आपसे मैं request करी कि मुझसे हिंदी में बात कीजिए."
+    },
+    {
+      "speaker": "customer",
+      "text": "आपको पता होना चाहिए कि मैं कोई job वगैरह नहीं करती हूं."
+    },
+    {
+      "speaker": "agent",
+      "text": "मैं समझ"
+    },
+    {
+      "speaker": "customer",
+      "text": "है ना? तो आपसे हां जो request है इसको अभी इसी वक़्त"
+    },
+    {
+      "speaker": "customer",
+      "text": "close कर दीजिए number मुझे दे दीजिए कि मैं आपको death certificate send कर सकूं."
+    },
+    {
+      "speaker": "agent",
+      "text": "जी, बिल्कुल। मैं समझ गया।"
+    },
+    {
+      "speaker": "customer",
+      "text": "Ok?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Number बताइए आप मुझे."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है, अर्चना जी। मैं आपकी बात समझ गया हूँ। आप चाहती हैं कि इस लोन को क्लोज कर दिया जाए क्योंकि आपके पति ने इसका पूरा भुगतान कर दिया था, और आप हमें उनका डेथ सर्टिफिकेट भेजना चाहती हैं। आप यह भी जानना चाहती हैं कि आपके"
+    },
+    {
+      "speaker": "customer",
+      "text": "जी जी ma'am."
+    },
+    {
+      "speaker": "agent",
+      "text": "मैं आपको विश्वास दिलाना चाहता हूँ कि मैं आपकी बात प्रॉपरल की टीम तक पहुंचाऊँगा। हम इसकी जांच करेंगे और आपको जल्द से जल्द सूचित करेंगे। इस बीच, मैं एक बार फिर से यह ज़रूर कहना चाहूँगा कि भले ही यह विवादित राशि है, लेकिन छह सौ अड़सठ दिनों से बकाया होने के कारण हर महीने आपकी क्रेडिट रिपोर्ट पर एक नकारात्मक प्रविष्टि जुड़ रही है। हालांकि, मैं इस बात पर ज़ोर नहीं दूँगा और आपकी चिंता को समझता हूँ। आपके पति के पेमेंट डिटेल्स और डेथ सर्टिफिकेट के लिए, मैं आपको एक ईमेल आईडी दे सकता हूँ जहाँ आप ये दस्तावेज़ भेज सकती हैं। क्या आप अभी ईमेल आईडी लेना चाहेंगी?"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां मुझे message message कर दीजिए इसी number पर."
+    },
+    {
+      "speaker": "agent",
+      "text": "मैं क्षमा चाहता हूँ, मैं आपको सीधे मैसेज नहीं कर सकता। लेकिन मैं आपको ईमेल आईडी यहीं पर बता सकता हूँ। क्या आप उसे नोट करना चाहेंगी?"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां. ठीक है, बोलिए."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है, ईमेल आईडी है: सपोर्ट एट प्रॉपरल डॉट कॉम (support@demolender.com)। आप इस ईमेल आईडी पर डेथ सर्टिफिकेट और बाकी के डिटेल्स भेज सकती हैं। क्या आप चाहती हैं कि मैं आपके लिए एक कॉलबैक शेड्यूल करूँ ताकि हम आपको इस मामले में आगे की जानकारी दे सकें?"
+    },
+    {
+      "speaker": "customer",
+      "text": "मुझे कोई ऐसा number provide कराएंगे जिस"
+    },
+    {
+      "speaker": "customer",
+      "text": "पर मैं WhatsApp पर उसको message कर सकूं?"
+    },
+    {
+      "speaker": "agent",
+      "text": "जी, मैं समझ रहा हूँ कि आप व्हाट्सएप पर डिटेल्स भेजना चाहती हैं। लेकिन हमारे पास व्हाट्सएप के माध्यम से दस्तावेज़"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां, मुझे mail करके नहीं आता है sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "जी, मैं आपकी परेशानी"
+    },
+    {
+      "speaker": "customer",
+      "text": "मैं mail नहीं कर पाऊंगी."
+    },
+    {
+      "speaker": "agent",
+      "text": "हेलो?"
+    },
+    {
+      "speaker": "agent",
+      "text": "हेलो?मैं समझता हूँ कि आपको मेल करने में दिक्कत हो सकती है। मैं एक बार फिर से प्रॉपरल टीम से पूछूंगा कि क्या कोई और तरीका है जिससे आप दस्तावेज़ भेज सकें, जैसे कि व्हाट्सएप। लेकिन अभी के लिए, मैं आपसे अनुरोध करूँगा कि अगर संभव हो तो आप किसी की मदद लेकर support@demolender.com पर ईमेल भेज दें। क्या आप चाहती हैं कि हम आपको कब कॉल करें ताकि हम आपको इस मामले में आगे की जानकारी दे सकें?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello. हां, मैं आपको अपना husband का death certificate send कर सकती हूं."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक"
+    },
+    {
+      "speaker": "customer",
+      "text": "जो अभी"
+    },
+    {
+      "speaker": "customer",
+      "text": "07/03/2025 का है."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है, अर्चना"
+    },
+    {
+      "speaker": "customer",
+      "text": "आज की date में उनको 1 year हुआ है sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "ओह, मुझे बहुत अफ़सोस है यह सुनकर। मैं इस जानकारी को नोट कर लेता हूँ। जैसा कि मैंने बताया, आप यह मृत्यु प्रमाण पत्र support@demolender.com पर भेज सकती हैं। क्या आप अभी भी चाहती हैं कि मैं आपके लिए एक कॉलबैक शेड्यूल करूँ, जब हम इस मामले में आगे की जांच कर लेंगे?"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां. Supported panel बोल रहे हैं आप?"
+    },
+    {
+      "speaker": "agent",
+      "text": "जी, सपोर्ट एट प्रॉपरल डॉट कॉम (support@demolender.com)। यह प्रॉपरल का आधिकारिक सपोर्ट ईमेल है।"
+    },
+    {
+      "speaker": "agent",
+      "text": "हेलो?"
+    },
+    {
+      "speaker": "customer",
+      "text": "तो कोई WhatsApp number send कर दीजिए."
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello."
+    },
+    {
+      "speaker": "agent",
+      "text": "मैं समझ सकता हूँ कि आपको व्हाट्सएप नंबर चाहिए, लेकिन जैसा कि मैंने पहले बताया, मैं व्हाट्सएप के माध्यम से दस्तावेज़ स्वीकार नहीं कर सकता। क्या आप चाहती हैं कि मैं आपको मेल आईडी एक बार फिर बताऊँ, या फिर आप कॉलबैक करवाना चाहेंगी?"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां"
+    },
+    {
+      "speaker": "customer",
+      "text": "जी हां, callback कर दीजिए."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है, अर्चना जी। मैं आपके लिए एक कॉलबैक शेड्यूल कर देता हूँ। आपको किस समय कॉल करना सुविधाजनक रहेगा?"
+    },
+    {
+      "speaker": "customer",
+      "text": "अभी recently हो जाता है तो ठीक है sir. जिससे मैं उनके document send कर दूं और आप यह"
+    },
+    {
+      "speaker": "customer",
+      "text": "loan का जो matter है वह close कीजिए"
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक"
+    },
+    {
+      "speaker": "customer",
+      "text": "ना? मैंने आपको जैसे ही guide किया है कि मैं और इसका proof यह है कि मेरे husband के ही account से आपको payment होती थी यह clear हो जाएगा."
+    },
+    {
+      "speaker": "agent",
+      "text": "जी, मैं समझ गया। मैं कॉलबैक आज ही के लिए शेड्यूल कर देता हूँ। क्या दोपहर में किसी विशिष्ट समय पर आप उपलब्ध रहेंगी?"
+    },
+    {
+      "speaker": "customer",
+      "text": "नहीं sir अभी अभी 1"
+    },
+    {
+      "speaker": "agent",
+      "text": "जी, अभी 1 बजे?"
+    },
+    {
+      "speaker": "customer",
+      "text": "13 हो रहा है. आप मुझे 01:15 तक करवा दीजिए."
+    },
+    {
+      "speaker": "agent",
+      "text": "हेलो?"
+    },
+    {
+      "speaker": "agent",
+      "text": "जी, मैं अभी 1:15 पर कॉलबैक शेड्यूल करने की कोशिश करता हूँ। इस बातचीत के लिए धन्यवाद। नमस्कार।"
+    },
+    {
+      "speaker": "customer",
+      "text": "जी?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Ok ok."
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 4,
+      "function": "switch_language",
+      "params": {
+        "language": "hi"
+      }
+    },
+    {
+      "turn": 6,
+      "function": "proceed_to_discovery",
+      "params": {}
+    },
+    {
+      "turn": 10,
+      "function": "switch_language",
+      "params": {
+        "language": "hi"
+      }
+    },
+    {
+      "turn": 21,
+      "function": "proceed_to_dispute",
+      "params": {}
+    },
+    {
+      "turn": 23,
+      "function": "switch_language",
+      "params": {
+        "language": "hi"
+      }
+    },
+    {
+      "turn": 82,
+      "function": "schedule_callback",
+      "params": {
+        "callback_type": "normal",
+        "reason": "ग्राहक अपने पति के मृत्यु प्रमाण पत्र और भुगतान विवरण भेजना चाहते हैं और लोन मामले को बंद करवाना चाहते हैं।",
+        "preferred_time": "आज 1:15 बजे"
+      }
+    }
+  ],
+  "analysis": {
+    "summary": "",
+    "bot_flags": {
+      "is_confused": false,
+      "is_repeating": false,
+      "is_irrelevant": false
+    },
+    "customer_flags": {
+      "is_agitated": false,
+      "is_complaining": false
+    }
+  }
+}

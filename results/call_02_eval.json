@@ -1,0 +1,59 @@
+{
+  "call_id": "call_02",
+  "language_violations": 3,
+  "loop_count": 0,
+  "gate_fired": "NONE",
+  "gate_reason": "N/A",
+  "call_type": "DISPUTE",
+  "scores": {
+    "empathy_tone": 0,
+    "phase_discipline": 14,
+    "negotiation_quality": 20,
+    "policy_compliance": 0,
+    "resolution_effectiveness": 15
+  },
+  "total_score": 49,
+  "verdict": "bad",
+  "worst_messages": [
+    {
+      "speaker": "agent",
+      "text": "Theek नमस्ते, hai, main aapke आपके saath अट्ठाईस Hindi mein baat हज़ार karta hoon. पाँच",
+      "reason": "policy_compliance: Agent repeated exact same sentence verbatim"
+    },
+    {
+      "speaker": "agent",
+      "text": "I am so sorry to hear about your husband's passing, Rahul. That must be incredibly difficult. I understand this situation with the loan is complicated, especially with him having handled it. I want to clarify that even though there's a dispute, at six hundred and sixty-eight days past due, every month adds another negative entry to the credit report. Banks only see an unpaid loan. Resolving the payment does not mean giving up the dispute. You can still pursue it separately. It",
+      "reason": "empathy_tone: Agent continued DPD/credit damage talk within 3 turns of borrower disclosing death of family member"
+    },
+    {
+      "speaker": "agent",
+      "text": "जी, मैं समझ गया। मैं कॉलबैक आज ही के लिए शेड्यूल कर देता हूँ। क्या दोपहर में किसी विशिष्ट समय पर आप उपलब्ध रहेंगी?",
+      "reason": "resolution_effectiveness: Callback scheduled without any specific date"
+    },
+    {
+      "speaker": "agent",
+      "text": "हेलो?",
+      "reason": "policy_compliance: Agent repeated exact same sentence verbatim"
+    }
+  ],
+  "reasons": [
+    "empathy_tone: Agent continued DPD/credit damage talk within 3 turns of borrower disclosing death of family member: -8",
+    "empathy_tone: language_violation count is 3: -15",
+    "phase_discipline: Borrower explicitly said loan is not theirs or already paid, agent did call proceed_to_dispute: -6",
+    "policy_compliance: language_violation count is 3: -15",
+    "policy_compliance: Agent repeated exact same sentence verbatim: -3",
+    "resolution_effectiveness: Callback scheduled without any specific date: -5"
+  ],
+  "summary": "The agent had multiple language violations and continued to discuss credit damage soon after the borrower disclosed the death of her husband. The agent did schedule a callback, but without a specific date. Despite these issues, the call reached a resolution and the total score was above 60.",
+  "gate_enforced": false,
+  "code_applied": [
+    "language_violations=3 -> -15 on empathy_tone and policy_compliance"
+  ],
+  "disposition": "BLANK_CALL",
+  "phases_visited": [
+    "opening",
+    "discovery",
+    "dispute"
+  ],
+  "model_used": "gemini-2.0-flash"
+}

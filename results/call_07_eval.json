@@ -1,0 +1,48 @@
+{
+  "call_id": "call_07",
+  "language_violations": 0,
+  "loop_count": 0,
+  "gate_fired": "C",
+  "gate_reason": "The call involved Tamil, the borrower expressed confusion throughout the call, and the call ended with no concrete outcome.",
+  "call_type": "LANGUAGE_BARRIER",
+  "scores": {
+    "empathy_tone": 8,
+    "phase_discipline": 8,
+    "negotiation_quality": 8,
+    "policy_compliance": 8,
+    "resolution_effectiveness": 8
+  },
+  "total_score": 40,
+  "verdict": "bad",
+  "worst_messages": [
+    {
+      "speaker": "agent",
+      "text": "I am Alex from DemoCompany, and I'm calling regarding your DemoLender loan. We have fifty-five thousand three hundred and thirty-five rupees pending on the account.",
+      "reason": "phase_discipline: TOS amount disclosed before borrower identity confirmed."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, I understand. I am calling about your DemoLender loan, and there's a pending amount of fifty-five thousand",
+      "reason": "empathy_tone: I understand used more than 3 times with no substantive follow-up."
+    },
+    {
+      "speaker": "agent",
+      "text": "நீங்கள் DemoLender கடனைப் பற்றி பேசுகிறீர்கள் என்று நான் நினைக்கிறேன். அந்தக் கடனில் ஐம்பத்து ஐந்தாயிரத்து முன்னூற்று முப்பத்தி ஐந்து ரூபாய் இன்னும் பாக்கி இருக்கிறது. இதைச்",
+      "reason": "resolution_effectiveness: Call ended with no resolution reached."
+    }
+  ],
+  "reasons": [
+    "phase_discipline: TOS amount disclosed before borrower identity confirmed.",
+    "empathy_tone: I understand used more than 3 times with no substantive follow-up.",
+    "resolution_effectiveness: Call ended with no resolution reached.",
+    "empathy_tone: Agent did not understand the customer's language."
+  ],
+  "summary": "The call was plagued by a language barrier, with the borrower speaking in Tamil and the agent struggling to understand. The agent disclosed the amount owed before confirming the borrower's identity and the call ended without a resolution.",
+  "gate_enforced": true,
+  "disposition": "LANGUAGE_BARRIER",
+  "phases_visited": [
+    "opening",
+    "discovery"
+  ],
+  "model_used": "gemini-2.0-flash"
+}

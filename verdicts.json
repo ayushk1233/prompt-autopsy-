@@ -1,0 +1,15 @@
+{
+  "instructions": "These are the human verdicts for each call. Do NOT look at this file before completing your submission. Check your accuracy against these after you're done.",
+  "verdicts": {
+    "call_01": { "verdict": "good", "reason": "Clean flow through all 4 phases. Agent is empathetic, explains the offer well, and secures a payment commitment." },
+    "call_02": { "verdict": "bad", "reason": "Disposition says BLANK_CALL but there's a full 154-line conversation. Agent fails to switch language promptly, and the disposition is completely wrong." },
+    "call_03": { "verdict": "bad", "reason": "15-minute call with excessive repetition. Customer gets increasingly frustrated as agent can't resolve the already-paid claim. Agent loops instead of escalating." },
+    "call_04": { "verdict": "good", "reason": "Agent handles unemployed borrower with empathy, doesn't pressure, schedules callback appropriately." },
+    "call_05": { "verdict": "good", "reason": "Agent navigates amount discrepancy well, customer agrees to a payment plan. Clean resolution." },
+    "call_06": { "verdict": "good", "reason": "Short, professional dispute handling. Agent doesn't argue, offers email escalation path." },
+    "call_07": { "verdict": "bad", "reason": "Language barrier not handled well. Agent attempts Tamil but the conversation goes nowhere. No fallback strategy." },
+    "call_08": { "verdict": "good", "reason": "Wrong number correctly identified and call ended quickly. No information leaked." },
+    "call_09": { "verdict": "bad", "reason": "Inbound callback but agent doesn't adapt to the context. Connection drops and no recovery attempted." },
+    "call_10": { "verdict": "bad", "reason": "Extremely short call. Agent doesn't dig into why the customer is evasive. Gives up too quickly without exploring options." }
+  }
+}

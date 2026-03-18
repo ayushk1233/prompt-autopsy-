@@ -1,0 +1,50 @@
+{
+  "call_id": "call_09",
+  "language_violations": 0,
+  "loop_count": 0,
+  "gate_fired": "D",
+  "gate_reason": "The final 4 agent turns are connectivity checks and the function_calls list does not contain any schedule_callback entry.",
+  "call_type": "NEGOTIATION",
+  "scores": {
+    "empathy_tone": 12,
+    "phase_discipline": 10,
+    "negotiation_quality": 12,
+    "policy_compliance": 14,
+    "resolution_effectiveness": 5
+  },
+  "total_score": 53,
+  "verdict": "bad",
+  "worst_messages": [
+    {
+      "speaker": "agent",
+      "text": "Hello?",
+      "reason": "resolution_effectiveness: Call dropped, no resolution reached"
+    },
+    {
+      "speaker": "agent",
+      "text": "Are you there?",
+      "reason": "resolution_effectiveness: Call dropped, no resolution reached"
+    },
+    {
+      "speaker": "agent",
+      "text": "Kavita Menon, can you hear me?",
+      "reason": "resolution_effectiveness: Call dropped, no resolution reached"
+    }
+  ],
+  "reasons": [
+    "empathy_tone: Call dropped, no empathy possible.",
+    "phase_discipline: Call dropped, no phase discipline possible.",
+    "negotiation_quality: Call dropped, no negotiation possible.",
+    "policy_compliance: Call dropped, no policy compliance possible.",
+    "resolution_effectiveness: Call dropped, no resolution reached."
+  ],
+  "summary": "The call involved a negotiation about a settlement amount. The call ended abruptly due to a connection issue, and the agent did not schedule a callback before ending the call.",
+  "gate_enforced": true,
+  "disposition": "INQUIRY",
+  "phases_visited": [
+    "opening",
+    "callback_opening",
+    "negotiation"
+  ],
+  "model_used": "gemini-2.0-flash"
+}

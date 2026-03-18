@@ -1,0 +1,325 @@
+{
+  "call_id": "call_05",
+  "duration_seconds": 286,
+  "total_turns": 54,
+  "customer": {
+    "name": "Deepa Krishnan",
+    "pending_amount": "fifty thousand",
+    "closure_amount": "zero",
+    "settlement_amount": "",
+    "dpd": "180"
+  },
+  "disposition": "STRONGEST_PTP",
+  "phases_visited": [
+    "opening",
+    "discovery",
+    "dispute",
+    "negotiation"
+  ],
+  "transcript": [
+    {
+      "speaker": "agent",
+      "text": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?"
+    },
+    {
+      "speaker": "customer",
+      "text": "****."
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello? There's fifty thousand rupees pending on your DemoLender loan. Have you been facing any difficulties?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Hello? Yes. These days, we can't arrange any money."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got it. I understand it can be tough. I can help you with some options to manage the fifty thousand"
+    },
+    {
+      "speaker": "customer",
+      "text": "So So yeah, sir. Yes, sir. I I can pay it on"
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, give me just a moment... Okay, when can you pay the fifty thousand rupees?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, I understand"
+    },
+    {
+      "speaker": "customer",
+      "text": "hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "No. No. No. I can pay."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Can you sell can you please listen to me this once?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm listening. Please go ahead."
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Yeah. I I'll pay it on"
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay."
+    },
+    {
+      "speaker": "customer",
+      "text": "I'll pay it on April 1. Sir."
+    },
+    {
+      "speaker": "customer",
+      "text": "April 1."
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, I heard you. You'll pay on April one. I have scheduled a callback for you then. Is there anything else I can help you with today regarding your DemoLender loan?"
+    },
+    {
+      "speaker": "customer",
+      "text": "No, sir."
+    },
+    {
+      "speaker": "customer",
+      "text": "I just do I just do I just"
+    },
+    {
+      "speaker": "customer",
+      "text": "pay the"
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, you'll pay the full forty"
+    },
+    {
+      "speaker": "customer",
+      "text": "amount, sir. Like, not not with extra amount, like, charges charges amount. I'll pay from April 1."
+    },
+    {
+      "speaker": "customer",
+      "text": "Everything every year, I'll pay."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. So, you're saying you'll pay the full fifty thousand rupees on April one, and you want to ensure there are no extra"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. XX,XXX."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay."
+    },
+    {
+      "speaker": "customer",
+      "text": "It's XX,XXX or something like that."
+    },
+    {
+      "speaker": "agent",
+      "text": "I see. You're saying the pending amount is actually twenty nine thousand, not fifty thousand?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Uh-huh."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "customer",
+      "text": "I'll pay that amount, sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, I hear that you're looking to"
+    },
+    {
+      "speaker": "customer",
+      "text": "I'll pay XX,XXX"
+    },
+    {
+      "speaker": "agent",
+      "text": "Right, I understand that you'd like to pay twenty-nine thousand five hundred rupees. However,"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes, sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "I hear you. You mentioned"
+    },
+    {
+      "speaker": "customer",
+      "text": "Turn around"
+    },
+    {
+      "speaker": "agent",
+      "text": "Let me pull up your account"
+    },
+    {
+      "speaker": "customer",
+      "text": "I can't hear You're you're not audible, sir. Like, it's all breaking. Your voice is breaking."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, I will try to speak more clearly. Can you hear me better now?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. That's it."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great. I was just saying that I'm pulling up your account details now so we can look at the exact figures for your DemoLender loan. You mentioned you can pay twenty-nine thousand five hundred rupees, and that you want to make sure there are no extra charges. I'm checking the details to see what we can do about the total pending amount of forty-eight thousand seventy-five rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah, sir. I'll do it in I'll pay, like, every month like, XX,XXX."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, you'd like to pay five thousand three hundred rupees"
+    },
+    {
+      "speaker": "customer",
+      "text": "From from April from April 1, sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "Understood. You want to start paying five thousand three hundred rupees monthly, beginning April first. We can certainly set up a payment plan for you. Let me confirm the exact details of your outstanding balance and how we can best accommodate your request while addressing your concerns about additional charges. I see here that your current pending amount is forty-eight thousand seventy-five rupees. We can remove penalty charges from that amount. Would you like me to proceed with a payment plan of five thousand three hundred rupees per month?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Yeah. Yeah. Yeah. Uh-huh. From from April 1, you can proceed, sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got it. So, to confirm, you'd like to pay five thousand three hundred rupees every month starting April first, and you want to ensure there are no extra charges, only the principal amount after removing penalties. Is that correct?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah, sir. Sure."
+    },
+    {
+      "speaker": "customer",
+      "text": "Thank you, sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome. We appreciate you taking care of this. Is there anything else I can assist you with today regarding your DemoLender loan?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? No, sir. I'll contact to mister Rajan Kumar. We we he he yeah. I'll contact to him, I'll pay the money every day. Every month. And he'll send me the link Klaysh. Not to this not to this number. He'll send me the link to my other number. So yeah, I'll pay it every month. From"
+    },
+    {
+      "speaker": "customer",
+      "text": "April 1."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, so you'll contact Mr. Rajan Kumar to receive the payment link on your other number, and you'll make the payments every"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Yes, sir. On time, like, every from every every month every month."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, I understand. You'll contact Mr. Rajan Kumar for the payment link on your other number, and then you'll make the payments on time every month, starting April first. Is that correct?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. Yeah, sir. Yeah, sir. I'll do it from April 1, sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "Excellent. Thank you for confirming."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay, sir."
+    },
+    {
+      "speaker": "customer",
+      "text": "Thank you."
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 7,
+      "function": "proceed_to_discovery",
+      "params": {}
+    },
+    {
+      "turn": 16,
+      "function": "schedule_callback",
+      "params": {
+        "callback_type": "normal",
+        "preferred_time": "April 1",
+        "reason": "Customer will pay on this date"
+      }
+    },
+    {
+      "turn": 18,
+      "function": "end_call",
+      "params": {
+        "reason": "resolved_callback_scheduled"
+      }
+    },
+    {
+      "turn": 26,
+      "function": "proceed_to_dispute",
+      "params": {}
+    }
+  ],
+  "analysis": {
+    "summary": "The customer confirmed they cannot arrange the full amount immediately but will pay XX,XXX INR monthly, starting April 1st. They will contact Mr. Rajan Kumar for a payment link to ensure no extra charges are included in the payment.",
+    "bot_flags": {
+      "is_confused": false,
+      "is_repeating": false,
+      "is_irrelevant": false
+    },
+    "customer_flags": {
+      "is_agitated": false,
+      "is_complaining": false
+    }
+  }
+}

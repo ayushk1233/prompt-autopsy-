@@ -1,0 +1,281 @@
+{
+  "call_id": "call_07",
+  "duration_seconds": 272,
+  "total_turns": 34,
+  "customer": {
+    "name": "Meera Joshi",
+    "pending_amount": "fifty thousand",
+    "closure_amount": "zero",
+    "settlement_amount": "",
+    "dpd": "180"
+  },
+  "disposition": "LANGUAGE_BARRIER",
+  "phases_visited": [
+    "opening",
+    "discovery"
+  ],
+  "transcript": [
+    {
+      "speaker": "agent",
+      "text": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment? Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Are you there?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, give me just a moment..."
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Hello, sir?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello? Hello, sir? Yes, I can hear you."
+    },
+    {
+      "speaker": "customer",
+      "text": "Sir, can I connect to the?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Anyone is available?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I am Alex from DemoCompany, and I'm calling regarding your DemoLender loan. We have fifty-five thousand three hundred and thirty-five rupees pending on the account."
+    },
+    {
+      "speaker": "customer",
+      "text": "21?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm sorry, I didn't catch that. Could you please repeat it?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello? Can you hear me?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Forget. You repeat again?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm calling about your DemoLender loan. There's an outstanding amount of fifty-five thousand three hundred and thirty-five rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay, sir. Sir, let's say I'm explained. Let's connect the call as well. Anyone available?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I am Alex from DemoCompany, and I'm calling about your DemoLender loan. There's fifty-five thousand three hundred and thirty-five rupees pending."
+    },
+    {
+      "speaker": "customer",
+      "text": "I'm understanding, sir."
+    },
+    {
+      "speaker": "customer",
+      "text": "You know something?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, I understand. I'm calling about your DemoLender loan, and there's a pending amount of fifty-five thousand three hundred and thirty-five rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay, sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "Right. So, regarding the fifty-five thousand three hundred and thirty-five rupees, have you been facing any difficulties with the payments?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Sir, can you understand?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, I understand. I am calling about your DemoLender loan, and there's a pending amount of fifty-five thousand"
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay, sir."
+    },
+    {
+      "speaker": "customer",
+      "text": "Then"
+    },
+    {
+      "speaker": "customer",
+      "text": "do you know Tamil?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Sari, naan ungaloda Tamil la pesuren."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ungaluku ezhudhiya irukumna, naan Tamil la pesuren."
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? உம் ஆனது கப்பல் வந்து என குவில வந்து ஒரு கொஞ்சநாள் போனது கப்பல்மே என குவிலுக்கு இது சாப்பாடு படம அடியறாங்க. ஆனால், அங்குள்ளோர் ஒங்கிலாராக கடித்திருந்தன. ஒரு டிமான்சு, புவிலென்று சாப்பாடு வாகன அல்லது கேட்பனுகிட்டிருந்தன."
+    },
+    {
+      "speaker": "agent",
+      "text": "I see. நீங்க கேட்குறது எனக்குப் புரியுது."
+    },
+    {
+      "speaker": "customer",
+      "text": "பல கொஜனால் செலுத்துப்பதென என குவிலர்தே இருக்கிறது. ரிச்ம்ந்து ஒருமட்டனது"
+    },
+    {
+      "speaker": "customer",
+      "text": ".000 .000"
+    },
+    {
+      "speaker": "agent",
+      "text": "மன்னிக்கவும். நீங்க என்ன சொல்றீங்கன்னு எனக்குப் புரியலை. நீங்க \"பல கொஜனால் செலுத்துப்பதென என குவிலர்தே இருக்கிறது\" அப்படின்னு சொன்னது தெளிவா இல்லை. தயவுசெய்து மறுபடியும் சொல்ல முடியுமா?"
+    },
+    {
+      "speaker": "customer",
+      "text": "நமது அப்படி தனியாக தான் செய்து செய்யப்படீங்களா?"
+    },
+    {
+      "speaker": "agent",
+      "text": "இல்ல, நீங்க கேட்டது எனக்கு புரியல. தயவுசெய்து மறுபடியும் தெளிவா சொல்ல முடியுமா?"
+    },
+    {
+      "speaker": "customer",
+      "text": "ஹலோ?"
+    },
+    {
+      "speaker": "agent",
+      "text": "சொல்லுங்க."
+    },
+    {
+      "speaker": "customer",
+      "text": "அப்போ இருக்க மோதே, எனகொது புவில சபோற்பா. அன்னமற்ற்றாங்க."
+    },
+    {
+      "speaker": "agent",
+      "text": "மன்னிக்கவும்,"
+    },
+    {
+      "speaker": "customer",
+      "text": "எந்த நெல்புமே பண்ணமற்றறாங்க."
+    },
+    {
+      "speaker": "agent",
+      "text": "மன்னிக்கவும். நீங்க என்ன சொல்றீங்கன்னு"
+    },
+    {
+      "speaker": "customer",
+      "text": "அப்படீன்னா போது எனக்கு உங்க செயல்லந்து ரிஸப்ஷன."
+    },
+    {
+      "speaker": "customer",
+      "text": "ம்."
+    },
+    {
+      "speaker": "agent",
+      "text": "சாரி, எனக்குப் புரியல. நீங்க எதைப்பத்தி பேசறீங்க?"
+    },
+    {
+      "speaker": "customer",
+      "text": "நலோன் வாயில்களாக, எடுத்த ரண்முக."
+    },
+    {
+      "speaker": "agent",
+      "text": "ஓ, சரி. லோனைப் பத்திதான் நான் பேசிக்கிட்டு இருக்கேன். உங்க DemoLender லோன்ல ஐம்பத்து ஐந்தாயிரத்து முன்னூற்று முப்பத்தி ஐந்து ரூபாய் பாக்கி இருக்கு."
+    },
+    {
+      "speaker": "customer",
+      "text": "ரன்யிலே அமைச்சர அந்த லோன்யாயிருக்கவா வாங்கிருக்க,"
+    },
+    {
+      "speaker": "agent",
+      "text": "ஆமா. DemoLender லோனைப் பத்திதான் பேசறேன்."
+    },
+    {
+      "speaker": "customer",
+      "text": "ந... ந.தரோன் எடுக்கா வாங்கிரியின் சொல்லுக."
+    },
+    {
+      "speaker": "agent",
+      "text": "மன்னிக்கவும். நீங்க என்ன சொல்றீங்கன்னு எனக்குப் புரியல. கொஞ்சம் தெளிவா சொல்ல முடியுமா?"
+    },
+    {
+      "speaker": "customer",
+      "text": "பலர்"
+    },
+    {
+      "speaker": "agent",
+      "text": "நீங்க"
+    },
+    {
+      "speaker": "customer",
+      "text": "நோtாங்கிருகேன் சுடைங் இல்ல."
+    },
+    {
+      "speaker": "customer",
+      "text": "சுடைங்"
+    },
+    {
+      "speaker": "agent",
+      "text": "நீங்கள் DemoLender கடனைப் பற்றி பேசுகிறீர்கள் என்று நான் நினைக்கிறேன். அந்தக் கடனில் ஐம்பத்து ஐந்தாயிரத்து முன்னூற்று முப்பத்தி ஐந்து ரூபாய் இன்னும் பாக்கி இருக்கிறது. இதைச்"
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 2,
+      "function": "proceed_to_discovery",
+      "params": {}
+    },
+    {
+      "turn": 19,
+      "function": "switch_language",
+      "params": {
+        "language": "ta"
+      }
+    }
+  ],
+  "analysis": {
+    "summary": "The customer had significant difficulty understanding the agent, even after switching to Tamil. Their responses were largely unclear, and no explicit payment intent was identified during the call.",
+    "bot_flags": {
+      "is_confused": true,
+      "is_repeating": true,
+      "is_irrelevant": false
+    },
+    "customer_flags": {
+      "is_agitated": true,
+      "is_complaining": false
+    }
+  }
+}

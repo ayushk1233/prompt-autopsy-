@@ -1,0 +1,145 @@
+{
+  "call_id": "call_06",
+  "duration_seconds": 0,
+  "total_turns": 17,
+  "customer": {
+    "name": "Arjun Nair",
+    "pending_amount": "fifty thousand",
+    "closure_amount": "zero",
+    "settlement_amount": "",
+    "dpd": "180"
+  },
+  "disposition": "DISPUTE",
+  "phases_visited": [
+    "opening",
+    "discovery",
+    "dispute",
+    "negotiation"
+  ],
+  "transcript": [
+    {
+      "speaker": "agent",
+      "text": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hire."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, give me just a moment..."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, Arjun Nair. Could you please share what's been causing the delay with the payments?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Bullish. Hello? We have disconnected with the institution."
+    },
+    {
+      "speaker": "customer",
+      "text": "We are not we are not happy with the services they have done."
+    },
+    {
+      "speaker": "agent",
+      "text": "I see. You're saying there's an issue with the services"
+    },
+    {
+      "speaker": "customer",
+      "text": "So yeah, admission captured."
+    },
+    {
+      "speaker": "customer",
+      "text": "Admissions were canceled, and we have took an admission in some other institution."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you're not happy with the services from the institution and have disconnected with them. It sounds like you're feeling dissatisfied with how things turned out."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes."
+    },
+    {
+      "speaker": "customer",
+      "text": "And I told clearly we paid the already amount and"
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay."
+    },
+    {
+      "speaker": "customer",
+      "text": "rest of the balance amount to be canceled."
+    },
+    {
+      "speaker": "agent",
+      "text": "I hear you. I want to mention that even though there's a dispute, an unpaid loan can still negatively affect your credit score. Banks see it as an outstanding amount."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay. So that's what I clearly told them. I gave a notice also."
+    },
+    {
+      "speaker": "agent",
+      "text": "Right. And I understand you've already taken steps to address this. Just so you know, settling the payment doesn't mean you're giving up on your dispute with the institution. You can still pursue that separately while also stopping any further credit damage. We might even be able to remove some of the penalty charges from your fifty thousand rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes. No. Why why do I have to pay? They disconnected with the institution."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand your point of view. Since this is beyond what I can resolve, I recommend reaching out to DemoLender directly. You can email them at support@demolender.com or call their customer service."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. You can please share a message. I will try to"
+    },
+    {
+      "speaker": "agent",
+      "text": "Alright. I've noted that. If you need anything else, please reach out. Take care."
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 3,
+      "function": "proceed_to_discovery",
+      "params": {}
+    },
+    {
+      "turn": 8,
+      "function": "proceed_to_dispute",
+      "params": {}
+    },
+    {
+      "turn": 9,
+      "function": "proceed_to_negotiation",
+      "params": {
+        "root_cause": "Dissatisfaction with educational institution services and admission process, leading to disconnection from the institute.",
+        "borrower_category": "institute_dispute",
+        "willingness": "reluctant"
+      }
+    },
+    {
+      "turn": 17,
+      "function": "end_call",
+      "params": {
+        "reason": "dispute_unresolved"
+      }
+    }
+  ],
+  "analysis": {
+    "summary": "The customer refuses to pay, stating dissatisfaction with the institution's services and canceled admission. They believe the remaining loan balance should be canceled and have already given notice, indicating no intent to pay.",
+    "bot_flags": {
+      "is_confused": false,
+      "is_repeating": false,
+      "is_irrelevant": false
+    },
+    "customer_flags": {
+      "is_agitated": false,
+      "is_complaining": false
+    }
+  }
+}

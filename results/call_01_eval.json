@@ -1,0 +1,53 @@
+{
+  "call_id": "call_01",
+  "language_violations": 0,
+  "loop_count": 0,
+  "gate_fired": "NONE",
+  "gate_reason": "N/A",
+  "call_type": "FULL_FLOW",
+  "scores": {
+    "empathy_tone": 17,
+    "phase_discipline": 17,
+    "negotiation_quality": 14,
+    "policy_compliance": 17,
+    "resolution_effectiveness": 15
+  },
+  "total_score": 80,
+  "verdict": "good",
+  "worst_messages": [
+    {
+      "speaker": "agent",
+      "text": "Okay, I understand there were some connectivity issues. Can you hear me clearly now?",
+      "reason": "phase_discipline: Agent moved to negotiation because of audio issues, not completed discovery: -5"
+    },
+    {
+      "speaker": "agent",
+      "text": "Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just thirty five thousand rupees. Would you like to discuss how to resolve this today?",
+      "reason": "phase_discipline: TOS or POS amount disclosed before borrower identity confirmed: -5"
+    },
+    {
+      "speaker": "agent",
+      "text": "Alright, let me just confirm everything...",
+      "reason": "phase_discipline: Borrower committed to payment but agent never reached closing: -3"
+    }
+  ],
+  "reasons": [
+    "empathy_tone: \"I understand\" used more than 3 times with no substantive follow-up: -3",
+    "phase_discipline: TOS or POS amount disclosed before borrower identity confirmed: -5",
+    "phase_discipline: Agent moved to negotiation because of audio issues, not completed discovery: -5",
+    "phase_discipline: Borrower committed to payment but agent never reached closing: -3",
+    "negotiation_quality: Agent never quoted POS (closure amount) during negotiation: -6",
+    "policy_compliance: Agent used wrong name for borrower: -3",
+    "resolution_effectiveness: Callback scheduled without any specific date or time: -5"
+  ],
+  "summary": "The agent disclosed the TOS and POS before confirming the borrower's identity and moved to negotiation due to audio issues. The agent also used the wrong name for the borrower and scheduled a callback without a specific date.",
+  "gate_enforced": false,
+  "disposition": "PTP",
+  "phases_visited": [
+    "opening",
+    "discovery",
+    "negotiation",
+    "closing"
+  ],
+  "model_used": "gemini-2.0-flash"
+}

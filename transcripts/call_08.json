@@ -1,0 +1,113 @@
+{
+  "call_id": "call_08",
+  "duration_seconds": 95,
+  "total_turns": 11,
+  "customer": {
+    "name": "Suresh Rao",
+    "pending_amount": "fifty thousand",
+    "closure_amount": "zero",
+    "settlement_amount": "",
+    "dpd": "180"
+  },
+  "disposition": "WRONG_NUMBER",
+  "phases_visited": [
+    "opening",
+    "discovery"
+  ],
+  "transcript": [
+    {
+      "speaker": "agent",
+      "text": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment? Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Hi, Harry."
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello, Evan."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, give me just a moment..."
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Are you still there?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? No, sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "I see. Suresh Rao, I'm calling about your DemoLender education loan. We're showing a pending amount of fifty thousand rupees. Can you tell me a little about why you haven't been able to make the payments?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Arthur."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, I understand. It seems I have reached the wrong person. I will go ahead and end this call."
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 5,
+      "function": "proceed_to_discovery",
+      "params": {}
+    },
+    {
+      "turn": 11,
+      "function": "end_call",
+      "params": {
+        "reason": "wrong_party"
+      }
+    }
+  ],
+  "analysis": {
+    "summary": "The agent called about a DemoLender loan, but reached the wrong person. The customer did not acknowledge the loan, and no payment intent could be established. The agent ended the call upon realizing the error.",
+    "bot_flags": {
+      "is_confused": true,
+      "is_repeating": true,
+      "is_irrelevant": false
+    },
+    "customer_flags": {
+      "is_agitated": false,
+      "is_complaining": false
+    }
+  }
+}

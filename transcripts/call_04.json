@@ -1,0 +1,400 @@
+{
+  "call_id": "call_04",
+  "duration_seconds": 0,
+  "total_turns": 47,
+  "customer": {
+    "name": "Vikram Patel",
+    "pending_amount": "fifty thousand",
+    "closure_amount": "zero",
+    "settlement_amount": "",
+    "dpd": "180"
+  },
+  "disposition": "CALLBACK",
+  "phases_visited": [
+    "opening",
+    "discovery",
+    "negotiation"
+  ],
+  "transcript": [
+    {
+      "speaker": "agent",
+      "text": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment? Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, give me just a moment..."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, Vikram, I'm calling about your DemoLender education loan. There's an outstanding amount of forty-three thousand seven hundred and forty-seven rupees. Could you tell me a little bit about what's causing the delay in"
+    },
+    {
+      "speaker": "customer",
+      "text": "I know that's wrong."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, I hear you. Could you please tell me what seems incorrect so I can look into it?"
+    },
+    {
+      "speaker": "customer",
+      "text": "I right now, I'm not working anywhere."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. So, the reason for the delay in payments is that you're currently unemployed. Is that right?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Jobless. Alright."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay. And when did your employment situation change, if I may ask? Was it recent, or has it been for a while?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Actually, after"
+    },
+    {
+      "speaker": "agent",
+      "text": "Let"
+    },
+    {
+      "speaker": "customer",
+      "text": "I think the next month, or the after month."
+    },
+    {
+      "speaker": "agent",
+      "text": "So you're saying that you expect"
+    },
+    {
+      "speaker": "customer",
+      "text": "It will take two to three months."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, so you anticipate it will take about two to three months to find new employment. Is that what you're saying?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes, sir. Yes. Yes. Actually, it's my name, but due to some reasons, it wouldn't have be happening."
+    },
+    {
+      "speaker": "customer",
+      "text": "I think it will take more to do"
+    },
+    {
+      "speaker": "customer",
+      "text": "three months."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. It sounds like you're facing some unexpected challenges in finding new work. Given that, would you be open to discussing some options"
+    },
+    {
+      "speaker": "customer",
+      "text": "No. That's"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're saying you're not open to discussing options right now? Could you tell me a little more about that?"
+    },
+    {
+      "speaker": "customer",
+      "text": "No. What? Sorry. Tell me. I didn't hear you at that time."
+    },
+    {
+      "speaker": "customer",
+      "text": "So that is why I I said"
+    },
+    {
+      "speaker": "customer",
+      "text": "it."
+    },
+    {
+      "speaker": "agent",
+      "text": "No problem"
+    },
+    {
+      "speaker": "customer",
+      "text": "Will you repeat it once again?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course. I was asking if you would be open to discussing some options we have, given that you anticipate it will take a few months to find new employment."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. Yeah."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, great. So, to confirm, you're open to discussing options to manage your loan during this period. Is that right?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, I'm here. I was just confirming if you're open to discussing options to manage your loan during this period of unemployment."
+    },
+    {
+      "speaker": "customer",
+      "text": "Alright."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, great. I understand you're currently facing some difficulties with unemployment, and it might take a couple of months to find a new job. We can certainly look into options to help you with the forty-three thousand seven hundred and forty-seven rupees that's pending. To start, I want to assure you that we can explore solutions that might reduce some of the additional charges that have accrued. Would that be helpful?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Obviously, that would I know comes up near about XX,XXX something. No?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you're concerned about the additional charges. We can definitely discuss what can be done about those. Would you like me to go over some of the options we have for managing your payments right now?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes. Tell me."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay. Okay. We have a few ways we can approach this. One option is to look at restructuring your loan to give you more time to pay, which could temporarily lower your monthly amount. Another is to see if we can settle for a reduced amount by waiving some of the penalty charges. And a third option could be to explore a temporary hold on payments, though that's usually for a shorter duration. Which of these sounds most interesting to you right now?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Second one."
+    },
+    {
+      "speaker": "agent",
+      "text": "The second option, which is exploring a reduced settlement amount by waiving some of the penalty charges. Is that correct?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Alright."
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Are you still there?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. I am."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great. So, just to confirm, you're interested in exploring a reduced settlement amount by waiving some of the penalty charges. Is that right?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Great."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect. To move forward with that, I'll need to gather a little more information to see what specific waivers we can offer in your situation. Would you be comfortable with that?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Are you there?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. I am. Yeah."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great. So, you're comfortable with me gathering more information to see what specific waivers we can offer for a reduced settlement amount, given your current situation?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay. Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Vikram Kumar"
+    },
+    {
+      "speaker": "customer",
+      "text": "Am getting your voice."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, great. I was just confirming if you are comfortable with me gathering more information to see what specific waivers we can offer for a reduced settlement amount, given your current situation?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes. Okay."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, fantastic. So, to explore the best possible reduced settlement amount for you, I'll need to confirm a few details on my end. This will help us understand what kind of waiver on the penalty charges is feasible. Are you ready for me to proceed with that?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. Go for it, ma'am."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great."
+    },
+    {
+      "speaker": "customer",
+      "text": "I need to pay. I I am going to pay."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear, Vikram. What I'm going to do now is put together the details for the reduced settlement amount, taking into account your situation. I'll need a moment to calculate the exact figures and the maximum waiver we can offer. Once I have that, I can present you with the concrete amount you would need to pay to close this loan. Would you like me to do that now?"
+    },
+    {
+      "speaker": "customer",
+      "text": "What? Sorry?"
+    },
+    {
+      "speaker": "agent",
+      "text": "My apologies. I was saying that I will put together the details for the reduced settlement amount for you. This means I will calculate the exact figures and the maximum waiver we can offer to close your loan. Would you like me to do that now?"
+    },
+    {
+      "speaker": "customer",
+      "text": "No. Right now, I'm not able to pay. Right?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand"
+    },
+    {
+      "speaker": "customer",
+      "text": "Just give me some time. So that I'll pay after"
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay,"
+    },
+    {
+      "speaker": "customer",
+      "text": "after that, I will make it settle."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you need some time to make the payment. Would you like me to schedule a callback for you when you might be in a better position to settle this? And if so, when would be a good time for that?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Alright."
+    },
+    {
+      "speaker": "customer",
+      "text": "The payment is okay, but"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "that you should do a callback now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, I can schedule a callback for you. What day and time would be best for that?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Tomorrow at ten"
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, Vikram. I've scheduled a callback for you for tomorrow at 10 AM. We will discuss the settlement amount then."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome. Have a good day."
+    },
+    {
+      "speaker": "customer",
+      "text": "Thank you."
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 3,
+      "function": "proceed_to_discovery",
+      "params": {}
+    },
+    {
+      "turn": 9,
+      "function": "proceed_to_negotiation",
+      "params": {
+        "borrower_category": "financial_hardship",
+        "willingness": "unclear",
+        "root_cause": "Job loss after institute closure"
+      }
+    },
+    {
+      "turn": 45,
+      "function": "schedule_callback",
+      "params": {
+        "callback_type": "wants_payment_amount",
+        "reason": "Borrower needs time to pay, wants to discuss settlement amount later",
+        "preferred_time": "Tomorrow at 10 AM"
+      }
+    },
+    {
+      "turn": 47,
+      "function": "end_call",
+      "params": {
+        "reason": "resolved_callback_scheduled"
+      }
+    }
+  ],
+  "analysis": {
+    "summary": "The customer is currently unemployed and unable to pay, expecting to find a job in 2-3 months. They were interested in a reduced settlement by waiving penalty charges but requested a callback for tomorrow at 10 AM, as they need more time before making payment.",
+    "bot_flags": {
+      "is_confused": true,
+      "is_repeating": true,
+      "is_irrelevant": false
+    },
+    "customer_flags": {
+      "is_agitated": false,
+      "is_complaining": false
+    }
+  }
+}

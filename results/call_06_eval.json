@@ -1,0 +1,50 @@
+{
+  "call_id": "call_06",
+  "language_violations": 0,
+  "loop_count": 0,
+  "gate_fired": "NONE",
+  "gate_reason": "N/A",
+  "call_type": "DISPUTE",
+  "scores": {
+    "empathy_tone": 17,
+    "phase_discipline": 14,
+    "negotiation_quality": 14,
+    "policy_compliance": 20,
+    "resolution_effectiveness": 14
+  },
+  "total_score": 79,
+  "verdict": "good",
+  "worst_messages": [
+    {
+      "speaker": "agent",
+      "text": "I want to mention that even though there's a dispute, an unpaid loan can still negatively affect your credit score. Banks see it as an outstanding amount.",
+      "reason": "empathy_tone: Agent continued DPD/credit damage talk within 3 turns of borrower disclosing dissatisfaction with the institution."
+    },
+    {
+      "speaker": "agent",
+      "text": "We might even be able to remove some of the penalty charges from your fifty thousand rupees.",
+      "reason": "phase_discipline: TOS amount disclosed before borrower identity confirmed."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand your point of view. Since this is beyond what I can resolve, I recommend reaching out to DemoLender directly. You can email them at support@demolender.com or call their customer service.",
+      "reason": "resolution_effectiveness: Dispute call ended with no escalation path given."
+    }
+  ],
+  "reasons": [
+    "empathy_tone: Agent continued DPD/credit damage talk within 3 turns of borrower disclosing dissatisfaction with the institution: -3",
+    "phase_discipline: TOS amount disclosed before borrower identity confirmed: -5",
+    "negotiation_quality: Agent quoted TOS as the amount owed: -5",
+    "resolution_effectiveness: Dispute call ended with no escalation path given: -6"
+  ],
+  "summary": "The agent initiated the call and transitioned to discovery and dispute after the borrower expressed dissatisfaction with the educational institution. The agent mentioned the total outstanding amount before confirming the borrower's identity and failed to provide an escalation path for the dispute.",
+  "gate_enforced": false,
+  "disposition": "DISPUTE",
+  "phases_visited": [
+    "opening",
+    "discovery",
+    "dispute",
+    "negotiation"
+  ],
+  "model_used": "gemini-2.0-flash"
+}

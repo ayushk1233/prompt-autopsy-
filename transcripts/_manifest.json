@@ -1,0 +1,143 @@
+[
+  {
+    "call_id": "call_01",
+    "disposition": "PTP",
+    "duration_seconds": 220,
+    "total_turns": 28,
+    "customer_name": "Priya Sharma",
+    "phases_visited": [
+      "opening",
+      "discovery",
+      "negotiation",
+      "closing"
+    ],
+    "transcript_lines": 41,
+    "function_call_count": 4
+  },
+  {
+    "call_id": "call_02",
+    "disposition": "BLANK_CALL",
+    "duration_seconds": 0,
+    "total_turns": 82,
+    "customer_name": "Rahul Verma",
+    "phases_visited": [
+      "opening",
+      "discovery",
+      "dispute"
+    ],
+    "transcript_lines": 154,
+    "function_call_count": 6
+  },
+  {
+    "call_id": "call_03",
+    "disposition": "ALREADY_PAID",
+    "duration_seconds": 901,
+    "total_turns": 105,
+    "customer_name": "Anjali Reddy",
+    "phases_visited": [
+      "opening",
+      "discovery",
+      "dispute"
+    ],
+    "transcript_lines": 204,
+    "function_call_count": 6
+  },
+  {
+    "call_id": "call_04",
+    "disposition": "CALLBACK",
+    "duration_seconds": 0,
+    "total_turns": 47,
+    "customer_name": "Vikram Patel",
+    "phases_visited": [
+      "opening",
+      "discovery",
+      "negotiation"
+    ],
+    "transcript_lines": 84,
+    "function_call_count": 4
+  },
+  {
+    "call_id": "call_05",
+    "disposition": "STRONGEST_PTP",
+    "duration_seconds": 286,
+    "total_turns": 54,
+    "customer_name": "Deepa Krishnan",
+    "phases_visited": [
+      "opening",
+      "discovery",
+      "dispute",
+      "negotiation"
+    ],
+    "transcript_lines": 66,
+    "function_call_count": 4
+  },
+  {
+    "call_id": "call_06",
+    "disposition": "DISPUTE",
+    "duration_seconds": 0,
+    "total_turns": 17,
+    "customer_name": "Arjun Nair",
+    "phases_visited": [
+      "opening",
+      "discovery",
+      "dispute",
+      "negotiation"
+    ],
+    "transcript_lines": 21,
+    "function_call_count": 4
+  },
+  {
+    "call_id": "call_07",
+    "disposition": "LANGUAGE_BARRIER",
+    "duration_seconds": 272,
+    "total_turns": 34,
+    "customer_name": "Meera Joshi",
+    "phases_visited": [
+      "opening",
+      "discovery"
+    ],
+    "transcript_lines": 59,
+    "function_call_count": 2
+  },
+  {
+    "call_id": "call_08",
+    "disposition": "WRONG_NUMBER",
+    "duration_seconds": 95,
+    "total_turns": 11,
+    "customer_name": "Suresh Rao",
+    "phases_visited": [
+      "opening",
+      "discovery"
+    ],
+    "transcript_lines": 17,
+    "function_call_count": 2
+  },
+  {
+    "call_id": "call_09",
+    "disposition": "INQUIRY",
+    "duration_seconds": 0,
+    "total_turns": 36,
+    "customer_name": "Kavita Menon",
+    "phases_visited": [
+      "opening",
+      "callback_opening",
+      "negotiation"
+    ],
+    "transcript_lines": 49,
+    "function_call_count": 2
+  },
+  {
+    "call_id": "call_10",
+    "disposition": "NO_COMMITMENT",
+    "duration_seconds": 110,
+    "total_turns": 9,
+    "customer_name": "Ravi Gupta",
+    "phases_visited": [
+      "discovery",
+      "negotiation",
+      "closing"
+    ],
+    "transcript_lines": 18,
+    "function_call_count": 4
+  }
+]
