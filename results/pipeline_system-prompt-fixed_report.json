@@ -1,0 +1,552 @@
+{
+  "prompt": "system-prompt-fixed.md",
+  "prompt_name": "system-prompt-fixed",
+  "label": "system-prompt-fixed",
+  "model": "gemini-2.0-flash",
+  "simulated": false,
+  "total_calls": 10,
+  "average_score": 65.4,
+  "good_calls": 5,
+  "bad_calls": 5,
+  "good_rate": 50.0,
+  "dimension_averages": {
+    "empathy_tone": 14.4,
+    "phase_discipline": 13.7,
+    "negotiation_quality": 11.8,
+    "policy_compliance": 13.3,
+    "resolution_effectiveness": 12.2
+  },
+  "failed_calls": [],
+  "detailed_results": [
+    {
+      "call_id": "call_01",
+      "language_violations": 0,
+      "loop_count": 0,
+      "gate_fired": "NONE",
+      "gate_reason": "N/A",
+      "call_type": "FULL_FLOW",
+      "scores": {
+        "empathy_tone": 17,
+        "phase_discipline": 17,
+        "negotiation_quality": 14,
+        "policy_compliance": 17,
+        "resolution_effectiveness": 15
+      },
+      "total_score": 80,
+      "verdict": "good",
+      "worst_messages": [
+        {
+          "speaker": "agent",
+          "text": "Okay, I understand there were some connectivity issues. Can you hear me clearly now?",
+          "reason": "empathy_tone: I understand used more than 3 times with no substantive follow-up -3"
+        },
+        {
+          "speaker": "agent",
+          "text": "Okay, so you're saying by the end of the month, you would be able to make the payment? Is that correct?",
+          "reason": "empathy_tone: I understand used more than 3 times with no substantive follow-up -3"
+        },
+        {
+          "speaker": "agent",
+          "text": "Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just thirty five thousand rupees. Would you like to discuss how to resolve this today?",
+          "reason": "phase_discipline: TOS or POS amount disclosed before borrower identity confirmed -5"
+        },
+        {
+          "speaker": "agent",
+          "text": "Okay, I understand there were some connectivity issues. Can you hear me clearly now?",
+          "reason": "negotiation_quality: Agent asked \"which option?\" without giving concrete amounts -3"
+        },
+        {
+          "speaker": "agent",
+          "text": "Alright, let me just confirm everything...",
+          "reason": "resolution_effectiveness: Callback scheduled without any specific date or time -5"
+        }
+      ],
+      "reasons": [
+        "empathy_tone: I understand used more than 3 times with no substantive follow-up -3",
+        "phase_discipline: TOS or POS amount disclosed before borrower identity confirmed -5",
+        "negotiation_quality: Agent asked \"which option?\" without giving concrete amounts -3",
+        "policy_compliance: Agent repeated exact same sentence verbatim -3",
+        "resolution_effectiveness: Callback scheduled without any specific date or time -5"
+      ],
+      "summary": "The agent disclosed the TOS and POS before confirming the borrower's identity. The agent also used \"I understand\" more than 3 times without substantive follow-up. The callback was scheduled without a specific date or time.",
+      "gate_enforced": false,
+      "disposition": "PTP",
+      "phases_visited": [
+        "opening",
+        "discovery",
+        "negotiation",
+        "closing"
+      ],
+      "model_used": "gemini-2.0-flash",
+      "original_disposition": "PTP",
+      "elapsed_seconds": 5.2,
+      "prompt_name": "system-prompt-fixed",
+      "simulated": false
+    },
+    {
+      "call_id": "call_02",
+      "language_violations": 3,
+      "loop_count": 0,
+      "gate_fired": "NONE",
+      "gate_reason": "N/A",
+      "call_type": "DISPUTE",
+      "scores": {
+        "empathy_tone": 0,
+        "phase_discipline": 14,
+        "negotiation_quality": 20,
+        "policy_compliance": 0,
+        "resolution_effectiveness": 15
+      },
+      "total_score": 49,
+      "verdict": "bad",
+      "worst_messages": [
+        {
+          "speaker": "agent",
+          "text": "Theek नमस्ते, hai, main aapke आपके saath अट्ठाईस Hindi mein baat हज़ार karta hoon. पाँच",
+          "reason": "policy_compliance: Agent repeated exact same sentence verbatim"
+        },
+        {
+          "speaker": "agent",
+          "text": "I am so sorry to hear about your husband's passing, Rahul. That must be incredibly difficult. I understand this situation with the loan is complicated, especially with him having handled it. I want to clarify that even though there's a dispute, at six hundred and sixty-eight days past due, every month adds another negative entry to the credit report. Banks only see an unpaid loan. Resolving the payment does not mean giving up the dispute. You can still pursue it separately. It",
+          "reason": "empathy_tone: Agent continued DPD/credit damage talk within 3 turns of borrower disclosing death of family member"
+        },
+        {
+          "speaker": "agent",
+          "text": "जी, मैं समझ गया। मैं कॉलबैक आज ही के लिए शेड्यूल कर देता हूँ। क्या दोपहर में किसी विशिष्ट समय पर आप उपलब्ध रहेंगी?",
+          "reason": "resolution_effectiveness: Callback scheduled without any specific date"
+        },
+        {
+          "speaker": "agent",
+          "text": "हेलो?",
+          "reason": "policy_compliance: Agent repeated exact same sentence verbatim"
+        }
+      ],
+      "reasons": [
+        "empathy_tone: Agent continued DPD/credit damage talk within 3 turns of borrower disclosing death of family member: -8",
+        "empathy_tone: language_violation count is 3: -15",
+        "phase_discipline: Borrower explicitly said loan is not theirs or already paid, agent did call proceed_to_dispute: -6",
+        "policy_compliance: language_violation count is 3: -15",
+        "policy_compliance: Agent repeated exact same sentence verbatim: -3",
+        "resolution_effectiveness: Callback scheduled without any specific date: -5"
+      ],
+      "summary": "The agent had multiple language violations and continued to discuss credit damage soon after the borrower disclosed the death of her husband. The agent did schedule a callback, but without a specific date. Despite these issues, the call reached a resolution and the total score was above 60.",
+      "gate_enforced": false,
+      "code_applied": [
+        "language_violations=3 -> -15 on empathy_tone and policy_compliance"
+      ],
+      "disposition": "BLANK_CALL",
+      "phases_visited": [
+        "opening",
+        "discovery",
+        "dispute"
+      ],
+      "model_used": "gemini-2.0-flash",
+      "original_disposition": "BLANK_CALL",
+      "elapsed_seconds": 5.7,
+      "prompt_name": "system-prompt-fixed",
+      "simulated": false
+    },
+    {
+      "call_id": "call_03",
+      "language_violations": 0,
+      "loop_count": 3,
+      "gate_fired": "NONE",
+      "gate_reason": "N/A",
+      "call_type": "DISPUTE",
+      "scores": {
+        "empathy_tone": 17,
+        "phase_discipline": 6,
+        "negotiation_quality": 14,
+        "policy_compliance": 14,
+        "resolution_effectiveness": 10
+      },
+      "total_score": 61,
+      "verdict": "bad",
+      "worst_messages": [
+        {
+          "speaker": "agent",
+          "text": "Okay, I understand you've already made a payment of nine thousand nine hundred and eight rupees and have a UTR number. I hear your frustration about this.",
+          "reason": "empathy_tone: I understand used with no substantive follow-up -3"
+        },
+        {
+          "speaker": "agent",
+          "text": "जी, मैं समझ सकता हूँ कि आपने नौ हज़ार नौ सौ आठ रुपये जमा किए हैं। मैं यह भी समझता हूँ कि आपके क्रेडिट स्कोर पर इसका असर हो रहा होगा क्योंकि आपके भुगतान में देरी के अब तीन सौ तैंतीस दिन हो गए हैं। क्या आप मुझे अपना यूटीआर नंबर बता सकती हैं ताकि मैं इसे सत्यापित कर सकूँ?",
+          "reason": "empathy_tone: I understand used with no substantive follow-up -3"
+        },
+        {
+          "speaker": "agent",
+          "text": "मुझे आपके भुगतान के सत्यापन के लिए यूटीआर नंबर की आवश्यकता होगी। क्या आप कृपया मुझे वह नंबर बता सकती हैं?",
+          "reason": "phase_discipline: loop_count is 3 or more: -5"
+        },
+        {
+          "speaker": "agent",
+          "text": "माफ़ कीजिएगा, मेरी हिंदी में बात करने की क्षमता सीमित है। अगर आप चाहें तो मैं तमिल में बात कर सकता हूँ, या मैं अंग्रेजी में भी बात कर सकता हूँ। आप किस भाषा में बात करना पसंद करेंगी?",
+          "reason": "policy_compliance: Agent repeated exact same sentence verbatim: -3"
+        },
+        {
+          "speaker": "agent",
+          "text": "आपका क्रेडिट स्कोर प्रभावित हो रहा है क्योंकि आपके भुगतान में देरी के अब तीन सौ तैंतीस दिन हो गए हैं। अगर यह भुगतान सत्यापित नहीं होता है, तो यह आपके क्रेडिट रिपोर्ट पर नकारात्मक असर डालना जारी रखेगा। क्या आप कुछ और जानकारी देना चाहेंगी जो मुझे इसे खोजने में मदद कर सके?",
+          "reason": "resolution_effectiveness: loop_count is 3 or more AND no resolution reached: -5"
+        }
+      ],
+      "reasons": [
+        "empathy_tone: I understand used more than 3 times with no substantive follow-up: -3",
+        "phase_discipline: loop_count is 3 or more: -5",
+        "policy_compliance: Agent repeated exact same sentence verbatim: -3",
+        "policy_compliance: Agent repeated exact same sentence verbatim: -3",
+        "resolution_effectiveness: Callback scheduled without any specific date or time: -5"
+      ],
+      "summary": "The agent had difficulty understanding the customer's UTR number and repeatedly asked for it. The agent also used \"I understand\" multiple times without providing substantive follow-up. The call ended without a clear resolution.",
+      "gate_enforced": false,
+      "code_applied": [
+        "loop_count=3 -> -5 on phase_discipline"
+      ],
+      "disposition": "ALREADY_PAID",
+      "phases_visited": [
+        "opening",
+        "discovery",
+        "dispute"
+      ],
+      "model_used": "gemini-2.0-flash",
+      "original_disposition": "ALREADY_PAID",
+      "elapsed_seconds": 5.7,
+      "prompt_name": "system-prompt-fixed",
+      "simulated": false
+    },
+    {
+      "call_id": "call_04",
+      "language_violations": 0,
+      "loop_count": 1,
+      "gate_fired": "NONE",
+      "gate_reason": "N/A",
+      "call_type": "FULL_FLOW",
+      "scores": {
+        "empathy_tone": 20,
+        "phase_discipline": 17,
+        "negotiation_quality": 4,
+        "policy_compliance": 20,
+        "resolution_effectiveness": 15
+      },
+      "total_score": 76,
+      "verdict": "good",
+      "worst_messages": [
+        {
+          "speaker": "agent",
+          "text": "Okay. Okay. We have a few ways we can approach this. One option is to look at restructuring your loan to give you more time to pay, which could temporarily lower your monthly amount. Another is to see if we can settle for a reduced amount by waiving some of the penalty charges. And a third option could be to explore a temporary hold on payments, though that's usually for a shorter duration. Which of these sounds most interesting to you right now?",
+          "reason": "negotiation_quality: Agent offered loan restructuring and temporary hold on payments."
+        },
+        {
+          "speaker": "agent",
+          "text": "Okay. Okay. We have a few ways we can approach this. One option is to look at restructuring your loan to give you more time to pay, which could temporarily lower your monthly amount. Another is to see if we can settle for a reduced amount by waiving some of the penalty charges. And a third option could be to explore a temporary hold on payments, though that's usually for a shorter duration. Which of these sounds most interesting to you right now?",
+          "reason": "negotiation_quality: Agent asked 'which option?' without giving concrete amounts."
+        },
+        {
+          "speaker": "agent",
+          "text": "I understand you need some time to make the payment. Would you like me to schedule a callback for you when you might be in a better position to settle this? And if so, when would be a good time for that?",
+          "reason": "resolution_effectiveness: Borrower asked for callback, agent scheduled one."
+        }
+      ],
+      "reasons": [
+        "phase_discipline: Borrower committed to payment but agent never reached closing: -3",
+        "negotiation_quality: Agent offered loan restructuring: -8",
+        "negotiation_quality: Agent offered temporary hold on payments: -8",
+        "negotiation_quality: Agent asked 'which option?' without giving concrete amounts: -3",
+        "resolution_effectiveness: Callback scheduled with specific date and time: no deduction"
+      ],
+      "summary": "The agent engaged the borrower, discovered the reason for delay, and moved to negotiation. The agent offered loan restructuring and a temporary hold on payments, and asked 'which option?' without giving concrete amounts. The agent scheduled a callback for the borrower.",
+      "gate_enforced": false,
+      "disposition": "CALLBACK",
+      "phases_visited": [
+        "opening",
+        "discovery",
+        "negotiation"
+      ],
+      "model_used": "gemini-2.0-flash",
+      "original_disposition": "CALLBACK",
+      "elapsed_seconds": 5.6,
+      "prompt_name": "system-prompt-fixed",
+      "simulated": false
+    },
+    {
+      "call_id": "call_05",
+      "language_violations": 0,
+      "loop_count": 0,
+      "gate_fired": "NONE",
+      "gate_reason": "N/A",
+      "call_type": "FULL_FLOW",
+      "scores": {
+        "empathy_tone": 20,
+        "phase_discipline": 20,
+        "negotiation_quality": 12,
+        "policy_compliance": 20,
+        "resolution_effectiveness": 15
+      },
+      "total_score": 87,
+      "verdict": "good",
+      "worst_messages": [
+        {
+          "speaker": "agent",
+          "text": "Okay, you'd like to pay five thousand three hundred rupees",
+          "reason": "negotiation_quality: Agent offered any invented installment plan -8"
+        },
+        {
+          "speaker": "agent",
+          "text": "Understood. You want to start paying five thousand three hundred rupees monthly, beginning April first. We can certainly set up a payment plan for you. Let me confirm the exact details of your outstanding balance and how we can best accommodate your request while addressing your concerns about additional charges. I see here that your current pending amount is forty-eight thousand seventy-five rupees. We can remove penalty charges from that amount. Would you like me to proceed with a payment plan of five thousand three hundred rupees per month?",
+          "reason": "negotiation_quality: Agent offered any invented installment plan -8"
+        },
+        {
+          "speaker": "agent",
+          "text": "Okay, so you'll contact Mr. Rajan Kumar to receive the payment link on your other number, and you'll make the payments every",
+          "reason": "resolution_effectiveness: Callback scheduled without any specific date or time -5"
+        }
+      ],
+      "reasons": [
+        "negotiation_quality: Agent offered any invented installment plan -8",
+        "resolution_effectiveness: Callback scheduled without any specific date or time -5",
+        "phase_discipline: Borrower committed to payment but agent never reached closing -3"
+      ],
+      "summary": "The agent offered an invented installment plan, which is a deduction. The agent also scheduled a callback without a specific time and did not reach a closing statement. The call resulted in a STRONGEST_PTP disposition.",
+      "gate_enforced": false,
+      "disposition": "STRONGEST_PTP",
+      "phases_visited": [
+        "opening",
+        "discovery",
+        "dispute",
+        "negotiation"
+      ],
+      "model_used": "gemini-2.0-flash",
+      "original_disposition": "STRONGEST_PTP",
+      "elapsed_seconds": 4.2,
+      "prompt_name": "system-prompt-fixed",
+      "simulated": false
+    },
+    {
+      "call_id": "call_06",
+      "language_violations": 0,
+      "loop_count": 0,
+      "gate_fired": "NONE",
+      "gate_reason": "N/A",
+      "call_type": "DISPUTE",
+      "scores": {
+        "empathy_tone": 20,
+        "phase_discipline": 20,
+        "negotiation_quality": 14,
+        "policy_compliance": 20,
+        "resolution_effectiveness": 14
+      },
+      "total_score": 88,
+      "verdict": "good",
+      "worst_messages": [
+        {
+          "speaker": "agent",
+          "text": "We might even be able to remove some of the penalty charges from your fifty thousand rupees.",
+          "reason": "negotiation_quality: Agent quoted TOS as the amount owed."
+        },
+        {
+          "speaker": "agent",
+          "text": "I understand your point of view. Since this is beyond what I can resolve, I recommend reaching out to DemoLender directly. You can email them at support@demolender.com or call their customer service.",
+          "reason": "resolution_effectiveness: Dispute call ended with no escalation path given."
+        }
+      ],
+      "reasons": [
+        "negotiation_quality: Agent quoted TOS as the amount owed: -5",
+        "resolution_effectiveness: Dispute call ended with no escalation path given: -6",
+        "phase_discipline: Borrower explicitly said loan is not theirs or already paid, agent did NOT call proceed_to_dispute: 0"
+      ],
+      "summary": "The agent initiated a call regarding a DemoLender loan and transitioned into a dispute phase after the borrower expressed dissatisfaction with the educational institution. The agent quoted the TOS amount and ended the call by directing the borrower to contact DemoLender directly, without providing an escalation path.",
+      "gate_enforced": false,
+      "disposition": "DISPUTE",
+      "phases_visited": [
+        "opening",
+        "discovery",
+        "dispute",
+        "negotiation"
+      ],
+      "model_used": "gemini-2.0-flash",
+      "original_disposition": "DISPUTE",
+      "elapsed_seconds": 3.7,
+      "prompt_name": "system-prompt-fixed",
+      "simulated": false
+    },
+    {
+      "call_id": "call_07",
+      "language_violations": 0,
+      "loop_count": 0,
+      "gate_fired": "C",
+      "gate_reason": "The call involved Tamil, the borrower expressed confusion throughout the call, and the call ended with no concrete outcome.",
+      "call_type": "LANGUAGE_BARRIER",
+      "scores": {
+        "empathy_tone": 8,
+        "phase_discipline": 8,
+        "negotiation_quality": 8,
+        "policy_compliance": 8,
+        "resolution_effectiveness": 8
+      },
+      "total_score": 40,
+      "verdict": "bad",
+      "worst_messages": [],
+      "reasons": [],
+      "summary": "The call was marked by a significant language barrier. The borrower's responses were largely unintelligible, and despite the agent switching to Tamil, communication remained ineffective, leading to no resolution.",
+      "gate_enforced": true,
+      "disposition": "LANGUAGE_BARRIER",
+      "phases_visited": [
+        "opening",
+        "discovery"
+      ],
+      "model_used": "gemini-2.0-flash",
+      "original_disposition": "LANGUAGE_BARRIER",
+      "elapsed_seconds": 2.5,
+      "prompt_name": "system-prompt-fixed",
+      "simulated": false
+    },
+    {
+      "call_id": "call_08",
+      "language_violations": 0,
+      "loop_count": 0,
+      "gate_fired": "B",
+      "gate_reason": "The agent stated a specific rupee amount before confirming they were speaking to the right person.",
+      "call_type": "WRONG_NUMBER",
+      "scores": {
+        "empathy_tone": 10,
+        "phase_discipline": 5,
+        "negotiation_quality": 0,
+        "policy_compliance": 0,
+        "resolution_effectiveness": 5
+      },
+      "total_score": 20,
+      "verdict": "bad",
+      "worst_messages": [
+        {
+          "speaker": "agent",
+          "text": "Suresh Rao, I'm calling about your DemoLender education loan. We're showing a pending amount of fifty thousand rupees. Can you tell me a little about why you haven't been able to make the payments?",
+          "reason": "phase_discipline: TOS amount disclosed before borrower identity confirmed"
+        },
+        {
+          "speaker": "agent",
+          "text": "Okay, I understand. It seems I have reached the wrong person. I will go ahead and end this call.",
+          "reason": "policy_compliance: Agent disclosed amount to wrong person"
+        }
+      ],
+      "reasons": [
+        "empathy_tone: Agent did not handle wrong number with empathy.",
+        "phase_discipline: TOS amount disclosed before borrower identity confirmed.",
+        "negotiation_quality: No negotiation possible due to wrong number.",
+        "policy_compliance: Agent disclosed amount to wrong person.",
+        "resolution_effectiveness: Call ended abruptly after wrong number was identified."
+      ],
+      "summary": "The agent called the wrong number and disclosed the loan amount before verifying the borrower's identity. This resulted in a policy violation and a failure to handle the situation effectively.",
+      "gate_enforced": true,
+      "disposition": "WRONG_NUMBER",
+      "phases_visited": [
+        "opening",
+        "discovery"
+      ],
+      "model_used": "gemini-2.0-flash",
+      "original_disposition": "WRONG_NUMBER",
+      "elapsed_seconds": 3.8,
+      "prompt_name": "system-prompt-fixed",
+      "simulated": false
+    },
+    {
+      "call_id": "call_09",
+      "language_violations": 0,
+      "loop_count": 0,
+      "gate_fired": "D",
+      "gate_reason": "The final 4 agent turns are connectivity checks and there is no schedule_callback entry in function_calls.",
+      "call_type": "NEGOTIATION",
+      "scores": {
+        "empathy_tone": 12,
+        "phase_discipline": 10,
+        "negotiation_quality": 12,
+        "policy_compliance": 14,
+        "resolution_effectiveness": 5
+      },
+      "total_score": 53,
+      "verdict": "bad",
+      "worst_messages": [
+        {
+          "speaker": "agent",
+          "text": "Hello?",
+          "reason": "resolution_effectiveness: Call dropped, no resolution reached."
+        },
+        {
+          "speaker": "agent",
+          "text": "Are you there?",
+          "reason": "resolution_effectiveness: Call dropped, no resolution reached."
+        },
+        {
+          "speaker": "agent",
+          "text": "Kavita Menon, can you hear me?",
+          "reason": "resolution_effectiveness: Call dropped, no resolution reached."
+        }
+      ],
+      "reasons": [
+        "empathy_tone: No issues detected.",
+        "phase_discipline: No issues detected.",
+        "negotiation_quality: No issues detected.",
+        "policy_compliance: No issues detected.",
+        "resolution_effectiveness: Call dropped, no resolution reached."
+      ],
+      "summary": "The call reached the negotiation phase, but the call dropped and the agent did not schedule a callback. The agent ended the call with connectivity checks.",
+      "gate_enforced": true,
+      "disposition": "INQUIRY",
+      "phases_visited": [
+        "opening",
+        "callback_opening",
+        "negotiation"
+      ],
+      "model_used": "gemini-2.0-flash",
+      "original_disposition": "INQUIRY",
+      "elapsed_seconds": 4.0,
+      "prompt_name": "system-prompt-fixed",
+      "simulated": false
+    },
+    {
+      "call_id": "call_10",
+      "language_violations": 0,
+      "loop_count": 0,
+      "gate_fired": "NONE",
+      "gate_reason": "N/A",
+      "call_type": "FULL_FLOW",
+      "scores": {
+        "empathy_tone": 20,
+        "phase_discipline": 20,
+        "negotiation_quality": 20,
+        "policy_compliance": 20,
+        "resolution_effectiveness": 20
+      },
+      "total_score": 100,
+      "verdict": "good",
+      "worst_messages": [
+        {
+          "speaker": "agent",
+          "text": "Okay, I understand you need some time to consider the options. Would it be alright if I checked in with you in about a week? Also, just a reminder that every month the loan remains open, it adds a negative entry to your credit report. The offer for penalty removal will still be open when we next speak. Please save my number and feel free to call whenever you're ready.",
+          "reason": "phase_discipline: Borrower committed to payment but agent never reached closing"
+        },
+        {
+          "speaker": "agent",
+          "text": "Okay, give me just a moment... Okay, Ravi Gupta, to help me understand better, could you tell me a little bit about what's making it difficult to pay the fifty-five thousand rupees for your DemoLender loan right now?",
+          "reason": "phase_discipline: TOS or POS amount disclosed before borrower identity confirmed"
+        }
+      ],
+      "reasons": [
+        "phase_discipline: TOS or POS amount disclosed before borrower identity confirmed",
+        "phase_discipline: Borrower committed to payment but agent never reached closing",
+        "resolution_effectiveness: Call ended with borrower saying \"I'll check\" and agent accepted with no follow-up"
+      ],
+      "summary": "The agent disclosed the TOS amount before confirming the borrower's identity. The call ended with the borrower needing time to consider options, but the agent did not schedule a specific callback.",
+      "gate_enforced": false,
+      "disposition": "NO_COMMITMENT",
+      "phases_visited": [
+        "discovery",
+        "negotiation",
+        "closing"
+      ],
+      "model_used": "gemini-2.0-flash",
+      "original_disposition": "NO_COMMITMENT",
+      "elapsed_seconds": 4.0,
+      "prompt_name": "system-prompt-fixed",
+      "simulated": false
+    }
+  ]
+}
